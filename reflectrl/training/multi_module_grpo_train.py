@@ -39,8 +39,7 @@ whole thing as one trajectory for a single group-relative loss." That
 rollout shape is exactly what multi-module credit assignment needs, so
 this script implements the GRPO loss by hand (raw transformers + peft,
 Dr. GRPO's two fixes applied directly in compute_dr_grpo_loss) instead of
-configuring TRL. We lose TRL's built-in robustness/optimizations in
-exchange for the rollout shape we actually need.
+configuring TRL.
 
 Run on a GPU host (one 80 GB H100 per job), from the repository root:
     python -m reflectrl.training.multi_module_grpo_train --task hotpotqa --budget 128 --seed 0 --variant dr_grpo
@@ -73,29 +72,10 @@ MAX_NEW_TOKENS_PER_MODULE = 512
 LEARNING_RATE = 1e-6
 GRAD_ACCUM_STEPS = 2
 KL_COEF = 0.04  # standard GRPO/DeepSeekMath default; one of step 1.6's tuning dimensions (added 2026-08-17, see compute_dr_grpo_loss)
-VLLM_GPU_MEMORY_UTILIZATION = 0.4  # leaves ~48GB of one 80GB H100 for the training model + KL reference pass (measured ~17-20GB); see collect_trajectories_vllm's docstring
+VLLM_GPU_MEMORY_UTILIZATION = 0.4  # leaves ~48GB of one 80GB H100 for the training model + KL reference pass (measured ~17-20GB)
 
 VARIANTS = ["dr_grpo", "rca", "rca_no_validate", "gepa_then_grpo", "gepa_onpolicy_then_grpo", "docstring_then_grpo"]
-# docstring_then_grpo (added 2026-09-03): trains from the DSPy signature docstrings of
-# reflectrl/pipelines/{hotpotqa,aime}_pipeline.py, UNCHANGED, i.e. GEPA's seed program with no
-# evolution at all. Motivation: inspection of the archived gepa_instructions.json files
-# showed that GEPA returned its seed program unchanged in all 12 math cells and in
-# several HotpotQA modules, so the "GEPA arm" partly measures the wording difference
-# between those docstrings and DEFAULT_INSTRUCTIONS below. This arm isolates that
-# wording effect from GEPA's edits.
-# gepa_onpolicy_then_grpo (added 2026-09-03): identical to gepa_then_grpo in every
-# respect EXCEPT that the instructions were evolved by GEPA with Qwen3-8B ITSELF as
-# the task model (served locally by vLLM; see scripts/prompt_opt/gepa_onpolicy_instructions.py),
-# rather than with Claude Haiku 4.5 and then transplanted. It reads the pre-computed
-# instructions from data/gepa_onpolicy/instructions/{task}_seed{seed}.json instead of
-# running GEPA inside the training job. Purpose: close the prompt-model confound the
-# paper's Section 6 names for the regime-boundary result.
 
-# Single source of truth for default per-module instruction text -- used by
-# both normal rollout collection AND gepa_then_grpo's instruction-override
-# path (which replaces these with GEPA-optimized text), so there is exactly
-# one place that defines "what does this module's prompt say" rather than
-# two copies that could drift.
 DEFAULT_INSTRUCTIONS = {
     "hotpotqa": {
         "generate_query": (
@@ -131,32 +111,7 @@ class Trajectory:
 # teacher-forced re-scoring pass mathematically equivalent to what
 # autoregressive generation actually saw, while giving an instruction-tuned
 # model (Qwen3-8B) the turn-boundary/stop tokens it needs to know when to
-# stop generating. See module docstring.
-#
-# CHANGED 2026-08-17: originally built prompts via raw string concatenation
-# (no chat template). Confirmed on the real Phase 1 smoke test to cause
-# near-zero rewards (0.003-0.008 across 32 rollouts) -- inspecting one real
-# trajectory showed WHY: the query module hallucinated a fake
-# "Context:...Answer:" continuation instead of stopping after the query,
-# and the answer module degenerated into repeating the same sentence ~60
-# times until hitting max_new_tokens. Classic symptom of prompting an
-# instruction-tuned model without its expected chat format -- no learned
-# stop signal. Rebuilt on tokenizer.apply_chat_template with an
-# incrementally-growing `conversation` list (one user/assistant pair per
-# module) instead of raw text concatenation -- see _chat_generate_turn/
-# _compute_chat_spans below, shared by both task functions to avoid
-# duplicating the span-computation logic twice.
-#
-# resume_from / fixed_outputs (added 2026-08-17): used by
-# regenerate_from_module() for RCA's training-time counterfactual
-# validation. Modules BEFORE resume_from reuse fixed_outputs' text instead
-# of sampling; resume_from and everything after is freshly sampled. Default
-# behavior (resume_from = the first module) is unchanged: sample everything
-# fresh, the normal rollout-collection case.
-#
-# instructions (added 2026-08-17): per-module instruction-text overrides,
-# used by the gepa_then_grpo variant to swap in GEPA-optimized instructions
-# instead of DEFAULT_INSTRUCTIONS.
+# stop generating.
 # ---------------------------------------------------------------------------
 
 def _chat_generate_turn(model, tokenizer, conversation: list[dict], user_content: str, device, max_new_tokens: int, generate_fresh: bool, fixed_text: str | None) -> str:
@@ -164,21 +119,7 @@ def _chat_generate_turn(model, tokenizer, conversation: list[dict], user_content
     PLACE. If generate_fresh, samples the assistant turn from the model
     (conditioned on the full conversation so far, via apply_chat_template's
     add_generation_prompt=True); otherwise reuses fixed_text unchanged
-    (RCA validation's resume_from mechanism). Returns the turn's text.
-
-    enable_thinking=False (added 2026-08-17, caught on the real single-
-    trajectory diagnostic after the chat-template fix): Qwen3 defaults to
-    extended <think>...</think> reasoning before every response. With this
-    trainer's small per-module budgets (64 tokens for a search query, for
-    example) thinking alone can consume the ENTIRE budget, leaving zero
-    tokens for the module's actual output -- confirmed directly (the query
-    module generated 64 tokens of mid-sentence reasoning and no query at
-    all). Each module here is meant to do one small, focused thing
-    (mirroring the DSPy pipeline's own dspy.ChainOfThought design, where
-    reasoning is a separate bounded field, not an open-ended budget-eating
-    prefix), so disabling thinking mode is the correct fix for this task,
-    not a token-budget increase (which would both blow up compute cost and
-    still not guarantee the model finishes within any fixed budget)."""
+    (RCA validation's resume_from mechanism). Returns the turn's text."""
     conversation.append({"role": "user", "content": user_content})
     if generate_fresh:
         prompt_text = tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=True, enable_thinking=False)
@@ -198,34 +139,7 @@ def _compute_chat_spans(tokenizer, conversation: list[dict], module_order: list[
     """conversation is [user_0, assistant_0, user_1, assistant_1, ...], one
     user/assistant pair per module in module_order. Returns the full
     conversation's canonical single tokenization plus each module's
-    (start, end) span within it.
-
-    FIXED 2026-08-17 (v3 -- v2's "render the prefix with
-    add_generation_prompt=True and take its length" approach was ALSO
-    caught broken by the same GPU-free tokenizer test, before it ever
-    reached a real GPU run): Qwen3's chat template inserts an empty
-    "<think>\n\n</think>\n\n" scaffold before an assistant message's content
-    ONLY when that message is the LAST one in the list being rendered --
-    not for every assistant turn. That makes rendering "the same message,
-    truncated at different points" context-dependent: conversation[:k] (this
-    message is last -> gets the scaffold) renders differently than the same
-    message's position within the full conversation (not last -> no
-    scaffold, for every module except the final one). So NEITHER "render up
-    to but excluding this message with add_generation_prompt=True" (v2) NOR
-    "render up to and including this message" reliably reproduces this
-    message's actual rendering within the full, untruncated conversation --
-    there is no prefix-consistent way to predict boundaries via truncated
-    re-renders when the template's output depends on global position, not
-    just prefix content.
-    The robust fix: don't try to predict boundaries via separate renders at
-    all. Search for each module's known CONTENT STRING directly within the
-    one authoritative full_text, in conversation order (searching only
-    after the previous module's match, so turns can't cross-match each
-    other) -- this only depends on the content actually being present
-    verbatim in full_text, which apply_chat_template guarantees (it inserts
-    message.content as-is), not on reproducing the template's own
-    positional logic. Character positions are then mapped onto the single
-    full tokenization's token offsets (return_offsets_mapping=True)."""
+    (start, end) span within it."""
     full_text = tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=False)
     encoding = tokenizer(full_text, add_special_tokens=False, return_offsets_mapping=True)
     full_token_ids = encoding["input_ids"]
@@ -544,7 +458,7 @@ def collect_trajectories_vllm(task: str, llm, lora_request, tokenizer, example, 
 
 
 # ---------------------------------------------------------------------------
-# RCA's training-time counterfactual validation (wired in 2026-08-17).
+# RCA's training-time counterfactual validation
 # ---------------------------------------------------------------------------
 
 def regenerate_from_module(
@@ -582,8 +496,7 @@ def validate_credit_training(
     corroborated (this module really was where the trajectory's headroom
     was, since a different sample from the CURRENT policy did better). If
     not, fall back to uniform. This is a different operationalization of
-    the same principle, not the same mechanism -- flag this distinction
-    explicitly if/when this shows up in the paper's methods section."""
+    the same principle, not the same mechanism."""
     modules = list(variant_credit.keys())
     top_module = max(variant_credit, key=variant_credit.get)
     regenerated_reward = regenerate_from_module(task, model, tokenizer, example, trajectory, top_module, device, instructions)
@@ -595,7 +508,7 @@ def validate_credit_training(
 
 
 # ---------------------------------------------------------------------------
-# gepa_then_grpo's instruction-feeding (wired in 2026-08-17).
+# gepa_then_grpo's instruction-feeding.
 # ---------------------------------------------------------------------------
 
 def run_gepa_for_instructions(task: str, max_metric_calls: int = 100) -> dict[str, str]:
@@ -670,18 +583,6 @@ def get_credit(
     if variant in ("dr_grpo", "gepa_then_grpo", "gepa_onpolicy_then_grpo", "docstring_then_grpo"):
         return credit_uniform_mask(modules)
 
-    # rca / rca_no_validate: reflect once on this trajectory. Cost note --
-    # DESIGN DECISION (not found in the plan, made here): reflecting on
-    # EVERY individual rollout would mean one extra Sonnet-5 API call per
-    # rollout -- at budget=8192 that's 8192 extra API calls for one training
-    # run, which is expensive and slow independent of the GPU cost. Instead,
-    # reflection is called ONCE PER GROUP (not per rollout), on the
-    # lowest-reward rollout in that group of GROUP_SIZE, and the resulting
-    # credit distribution is applied to every rollout in the group. This
-    # assumes rollouts from the same prompt share a similar
-    # module-fragility profile, which is a reasonable but unverified
-    # assumption -- flag this explicitly in the paper's methods section if
-    # this design is kept past the first real run.
     trajectory_text = "\n".join(f"[{m}]: {t}" for m, t in trajectory.module_outputs.items())
     reflection = reflect_credit(
         question=trajectory.question,
@@ -693,9 +594,6 @@ def get_credit(
     )
     if variant == "rca_no_validate":
         return reflection.credit
-    # variant == "rca": wired 2026-08-17 to real training-time
-    # counterfactual validation -- see validate_credit_training's docstring
-    # for how this differs from FaultLine's evaluation-time version.
     validated_credit, _was_validated = validate_credit_training(
         reflection.credit, trajectory, task, example, model, tokenizer, device, instructions,
     )
@@ -725,49 +623,15 @@ def compute_dr_grpo_loss(model, tokenizer, trajectories: list[Trajectory], credi
     `grad_scale` folds in GRAD_ACCUM_STEPS' scaling (the caller no longer
     calls .backward() itself -- see run()'s call site). Returns the total
     loss as a plain float for logging, not a tensor -- callers must NOT
-    call .backward() on it again.
-
-    KL term added 2026-08-17: the set-up plan always called step 1.6 an
-    "LR/KL/group-size" tuning sweep, but no KL penalty against a
-    reference policy actually existed until this fix -- caught before
-    running that sweep, not after. Standard GRPO/Dr. GRPO formulation
-    includes this as regularization against the frozen initial policy;
-    dropping it silently would have both violated what the setup doc
-    already promised and left one of step 1.6's three named tuning
-    dimensions nonexistent. Reference logprobs come from the SAME model
-    with its LoRA adapter disabled (PEFT's model.disable_adapter() context
-    manager) -- since the base weights are frozen, disabling the adapter
-    gives exactly the reference (pre-training) policy's logits with no
-    second model copy in memory, at the cost of one extra no_grad forward
-    pass per trajectory (roughly doubling per-step GPU time -- a real,
-    accepted cost, not an oversight; see decisions.md for the tradeoff
-    discussion). Uses the k3 estimator (Schulman, http://joschu.net/blog/kl-approx.html
-    -- the same low-variance, always-non-negative estimator used in
-    DeepSeekMath/TRL's own GRPO implementations): for log_ratio =
-    policy_logprob - ref_logprob on tokens actually sampled from the
-    policy, KL ≈ exp(-log_ratio) - 1 + log_ratio. Applied only over
-    GENERATED (module) tokens, never prompt/context tokens -- built from
-    the same shifted spans as the advantage mask, but as a plain 0/1
-    indicator (NOT reused from advantage_mask's nonzero entries, since a
-    trajectory whose reward exactly equals the group mean has advantage=0
-    on every one of its own generated tokens, which would make
-    (advantage_mask != 0) wrongly zero out its entire KL contribution)."""
+    call .backward() on it again."""
     import torch
 
     from reflectrl.training.rca import compute_advantage_mask
 
     rewards = [t.reward for t in trajectories]
     group_mean = sum(rewards) / len(rewards)
-    # Dr. GRPO fix #2: advantage = reward - group_mean, NO division by
-    # group std (vanilla GRPO's std-normalization inflates advantages for
-    # low-variance/already-solved groups -- the bias this paper's own
-    # cost-honest accounting can't afford to have contaminating it).
     advantages = [r - group_mean for r in rewards]
 
-    # Dr. GRPO fix #1: normalize by a CONSTANT (max tokens across the
-    # group's generated spans), not each trajectory's own length -- computed
-    # up front (no model calls needed) since it must be known before any
-    # trajectory's per-token loss can be normalized.
     total_generated_tokens = max(
         sum(e - s for s, e in traj.module_token_spans.values()) for traj in trajectories
     )
@@ -848,12 +712,6 @@ def run(
     torch.manual_seed(seed)
     random.seed(seed)
 
-    # Hyperparams promoted to CLI flags 2026-08-17 for step 1.6's LR/KL/
-    # group-size tuning sweep (the set-up plan's suggested escape hatch
-    # once the search "gets large" -- now a real 3-dimensional grid instead
-    # of 2). Encoded into the default output_dir so sweep runs with
-    # different hyperparams at the same (task, variant, budget, seed) don't
-    # silently overwrite each other's checkpoint.
     output_dir = output_dir or str(
         WORKSHOP_ROOT / "checkpoints"
         / f"mmgrpo_{task}_{variant}_{budget_rollouts}_seed{seed}_lr{learning_rate}_gs{group_size}_kl{kl_coef}"
@@ -865,55 +723,10 @@ def run(
     tokenizer = AutoTokenizer.from_pretrained(POLICY_MODEL)
     model = AutoModelForCausalLM.from_pretrained(POLICY_MODEL, torch_dtype=torch.bfloat16, device_map="auto")
     model = get_peft_model(model, LoraConfig(**LORA_CONFIG))
-    # Needed on a single 80GB H100 at GROUP_SIZE=8 -- confirmed by real OOM on
-    # the Phase 1 smoke test (2026-08-17): holding activations for the full
-    # forward pass of every trajectory is too much even before compute_dr_grpo_loss's
-    # per-trajectory-backward fix (see that function's docstring) is factored
-    # in. enable_input_require_grads() is required alongside gradient
-    # checkpointing specifically because PEFT freezes the base model's
-    # embeddings (requires_grad=False) -- without it there is no tensor in the
-    # recomputation path that requires grad, and backward() silently produces
-    # no gradient for the LoRA params.
     model.gradient_checkpointing_enable()
     model.enable_input_require_grads()
     device = next(model.parameters()).device
 
-    # vLLM-accelerated rollout generation (added 2026-08-17) -- see
-    # collect_trajectories_vllm's docstring for why (measured ~7 tok/s and
-    # ~5x slower than this on real hardware) and REQUIRES the flashinfer
-    # patch documented in the README (Python 3.11 only), or engine init
-    # crashes. enforce_eager=True is required in THIS environment
-    # specifically -- confirmed the crash persists with it alone (without
-    # the patch) and the patch alone was only tested WITH enforce_eager=True,
-    # not without it; keeping both is the one proven-working combination,
-    # and enforce_eager also sidesteps torch.compile/CUDAGraph JIT risk
-    # entirely, which barely matters at these short generation lengths
-    # anyway.
-    # FIXED 2026-08-18 -- real, reproducible CUDA OOM found live on
-    # pod-shared-0, gepa_then_grpo only, crashing deep into normal training
-    # steps (not during GEPA itself). First hypothesis (leftover cached
-    # CUDA allocations from `import dspy` during run_gepa_for_instructions)
-    # was WRONG -- a torch.cuda.empty_cache() call right after GEPA made
-    # zero difference: the retried job crashed at the identical step (12)
-    # with the identical training-process memory reading (44.77 GiB) as
-    # the first failure, proving the cause isn't a one-time leftover but a
-    # sustained effect through the whole run. Real cause, confirmed by
-    # reading the job's own saved gepa_instructions.json: GEPA-optimized
-    # instructions are 2262-2819 chars vs. DEFAULT_INSTRUCTIONS' ~130-190
-    # -- ~15-20x longer, and gepa_then_grpo threads these into every
-    # rollout's prompt for the ENTIRE run (not just the GEPA phase), so its
-    # sequences are systematically longer than dr_grpo/rca's throughout
-    # training. Longer sequences need proportionally more backward-pass
-    # activation memory -- this is genuine, sustained extra memory
-    # pressure on the TRAINING side, not vLLM's (vLLM's own reservation is
-    # a fixed fraction of GPU memory regardless of prompt length, and its
-    # engine's own footprint was identical, ~33.6GB, in every crash).
-    # The actual shortfall each time was tiny (<1GB free at OOM time), so
-    # a modest reduction in vLLM's fixed reservation -- freeing headroom
-    # for the training side specifically when this variant's longer
-    # instructions are in play -- is a safe, proportionate fix instead of
-    # a blanket global cut that would waste vLLM throughput on every other
-    # variant that never needed the extra margin.
     vllm_gpu_mem_util = 0.35 if variant in ("gepa_then_grpo", "gepa_onpolicy_then_grpo", "docstring_then_grpo") else VLLM_GPU_MEMORY_UTILIZATION
     print("Loading vLLM engine for group-batched rollout generation ...")
     vllm_engine = LLM(
@@ -1002,16 +815,6 @@ def run(
         try:
             trajectories = collect_trajectories_vllm(task, vllm_engine, lora_request, tokenizer, example, group_size, instructions=instructions)
         except ValueError as exc:
-            # FOUND LIVE 2026-09-04 (hotpotqa gepa_onpolicy seed 0, step 97): a module's
-            # generated text was not found verbatim in the re-rendered chat transcript
-            # (_compute_chat_spans -> "substring not found"). Qwen3's chat template
-            # rewrites earlier assistant turns (it strips <think>...</think> reasoning
-            # from history), so an output that happens to contain those tags cannot be
-            # located after re-rendering. It never occurred in the 105 archived runs;
-            # it did under a long evolved instruction that invites explicit reasoning.
-            # Skipping the example is the fidelity-preserving choice: no budget is
-            # consumed, nothing is trained on text the policy did not generate, and
-            # the count is reported so the skip rate is visible.
             n_unrenderable_skipped += 1
             print(f"WARNING: skipped example {example_idx - 1} (unrenderable module output: {exc}); "
                   f"skipped so far={n_unrenderable_skipped}")
@@ -1068,39 +871,3 @@ if __name__ == "__main__":
     parser.add_argument("--kl-coef", type=float, default=KL_COEF, help="step 1.6 tuning sweep dimension")
     args = parser.parse_args()
     run(args.task, args.budget, args.seed, args.variant, args.output_dir, args.learning_rate, args.group_size, args.kl_coef)
-
-# -----------------------------------------------------------------------------
-# IMPLEMENTATION NOTES (failure modes found on real hardware, all fixed above)
-#
-# 1. Token spans. Each module's tokens are located by searching for its known
-#    output string inside the single chat-templated full text and mapping the
-#    character positions onto that tokenisation's offsets
-#    (return_offsets_mapping=True). Counting tokens of separately tokenised
-#    prefixes fails because BPE merges differ at concatenation boundaries, and
-#    predicting boundaries from add_generation_prompt renders fails because
-#    Qwen3's template inserts an empty <think></think> scaffold only before the
-#    last assistant message.
-#
-# 2. Chat template and thinking mode. Raw-text prompts gave the instruction-tuned
-#    policy no stop signal (rewards 0.003-0.008 on the first smoke test). Prompts
-#    are built with tokenizer.apply_chat_template, and enable_thinking=False is
-#    required: with thinking on, the 64-token query module emits only reasoning.
-#
-# 3. Memory. Backpropagating all GROUP_SIZE trajectories as one summed loss ran
-#    out of memory on an 80 GB H100. compute_dr_grpo_loss backpropagates per
-#    trajectory (mathematically identical), and gradient checkpointing is on
-#    (with enable_input_require_grads, needed because PEFT freezes the base).
-#
-# 4. Rollout speed. HF generate() ran at about 7 tok/s; vLLM group-batched
-#    generation with LoRA hot-swapping (sync_lora_to_vllm) is about 5x faster
-#    and shares the GPU with the training model at gpu_memory_utilization=0.4.
-#    On Python 3.11 vLLM's flashinfer dependency needs the one-line patch in the
-#    README before the engine will start.
-#
-# 5. Interfaces. The answer module is scored on the span after an `answer:`
-#    marker if one is present, else on the whole output (_extract_answer_span),
-#    for every arm; the rule is a no-op on the default instructions. No
-#    equivalent rule exists for the query module
-#    (64-token cap, raw output passed to BM25), which is why evolved query
-#    instructions that ask for reasoning first fail at this interface.
-# -----------------------------------------------------------------------------

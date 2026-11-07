@@ -1,9 +1,8 @@
 """Shared loader + statistics for the reflection-vs-RL analysis.
 
-Standard library only, deliberately: every number in the paper should be
+Standard library only, deliberately: every number in the paper is
 reproducible with a bare `python` and no scientific stack. numpy/scipy are NOT
-required (and were in fact broken on the author's machine, which is how this
-constraint was discovered).
+required.
 
 Data source: data/runs/<run_name>/{training_log,training_summary}.json,
 produced by analysis/extract_runs.py from the pod backup tarballs.
