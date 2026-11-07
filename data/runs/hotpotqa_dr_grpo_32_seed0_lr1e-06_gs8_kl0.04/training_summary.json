@@ -1,0 +1,11 @@
+{
+  "task": "hotpotqa",
+  "variant": "dr_grpo",
+  "budget_rollouts": 32,
+  "seed": 0,
+  "policy_model": "Qwen/Qwen3-8B",
+  "group_size": 8,
+  "learning_rate": 1e-06,
+  "kl_coef": 0.04,
+  "final_mean_reward": 0.05392549468299906
+}

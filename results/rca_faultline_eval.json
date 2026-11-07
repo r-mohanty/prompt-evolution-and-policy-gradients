@@ -1,0 +1,1053 @@
+{
+  "n_instances": 69,
+  "n_errors": 6,
+  "raw_reflection_accuracy": 0.5714285714285714,
+  "validated_accuracy": 0.7142857142857143,
+  "validation_accept_rate": 0.5714285714285714,
+  "rows": [
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "raw_top_module": "generate_answer",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "raw_top_module": "generate_answer",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.3,
+        "generate_answer": 0.7
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.05,
+        "generate_answer": 0.95
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.7,
+        "generate_answer": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.75,
+        "generate_answer": 0.25
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.75,
+        "generate_answer": 0.25
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.05,
+        "generate_answer": 0.95
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "raw_top_module": "generate_query",
+      "raw_correct": true,
+      "validated_top_module": "generate_query",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.7,
+        "generate_answer": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "raw_top_module": "generate_query",
+      "raw_correct": true,
+      "validated_top_module": "generate_query",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.75,
+        "generate_answer": 0.25
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "raw_top_module": "generate_query",
+      "raw_correct": true,
+      "validated_top_module": "generate_query",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.55,
+        "generate_answer": 0.45
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.5,
+        "generate_answer": 0.5
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.7,
+        "generate_answer": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.45,
+        "generate_answer": 0.55
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.65,
+        "generate_answer": 0.35
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.65,
+        "generate_answer": 0.35
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.6,
+        "generate_answer": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.45,
+        "generate_answer": 0.55
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.3,
+        "generate_answer": 0.7
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.1,
+        "generate_answer": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.35,
+        "generate_answer": 0.65
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.25,
+        "generate_answer": 0.75
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.15,
+        "generate_answer": 0.85
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_answer",
+      "raw_correct": true,
+      "validated_top_module": "generate_answer",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "generate_query": 0.2,
+        "generate_answer": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.6,
+        "generate_answer": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.7,
+        "generate_answer": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "raw_top_module": "generate_query",
+      "raw_correct": false,
+      "validated_top_module": "generate_query",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "generate_query": 0.7,
+        "generate_answer": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "verify",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.0,
+        "solve": 0.1,
+        "verify": 0.9
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.1,
+        "solve": 0.6,
+        "verify": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.15,
+        "solve": 0.5,
+        "verify": 0.35
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "verify",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.35,
+        "solve": 0.25,
+        "verify": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "verify",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.0,
+        "solve": 0.0,
+        "verify": 1.0
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.05,
+        "solve": 0.55,
+        "verify": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "StopIteration: "
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "JSONDecodeError: Unterminated string starting at: line 1 column 69 (char 68)"
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "plan",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.35,
+        "solve": 0.35,
+        "verify": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "solve",
+      "raw_correct": true,
+      "validated_top_module": "solve",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "plan": 0.1,
+        "solve": 0.5,
+        "verify": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.1,
+        "solve": 0.45,
+        "verify": 0.45
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "solve",
+      "raw_correct": true,
+      "validated_top_module": "solve",
+      "validated_correct": true,
+      "was_validated": true,
+      "raw_credit": {
+        "plan": 0.05,
+        "solve": 0.65,
+        "verify": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.1,
+        "solve": 0.5,
+        "verify": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "StopIteration: "
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "StopIteration: "
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "StopIteration: "
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.05,
+        "solve": 0.55,
+        "verify": 0.4
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "verify",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.05,
+        "solve": 0.15,
+        "verify": 0.8
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": true,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.15,
+        "solve": 0.55,
+        "verify": 0.3
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "raw_top_module": null,
+      "raw_correct": false,
+      "validated_top_module": null,
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {},
+      "error": "JSONDecodeError: Unterminated string starting at: line 1 column 69 (char 68)"
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "raw_top_module": "solve",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.1,
+        "solve": 0.55,
+        "verify": 0.35
+      },
+      "error": null
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "raw_top_module": "verify",
+      "raw_correct": false,
+      "validated_top_module": "plan",
+      "validated_correct": false,
+      "was_validated": false,
+      "raw_credit": {
+        "plan": 0.05,
+        "solve": 0.45,
+        "verify": 0.5
+      },
+      "error": null
+    }
+  ],
+  "total_project_cost_usd_at_completion": 2.657697000000003,
+  "corrected_analysis": {
+    "note": "The original validated_accuracy (0.714) is INFLATED by a tie-breaking artifact: when validation rejects the reflection top pick, credit falls back to a uniform distribution, and max() on an exactly-tied dict deterministically returns the FIRST module in the pipeline module-order list (plan for AIME, generate_query for HotpotQA) -- not a real prediction. The corrected framing below treats a validation-rejected row as an honest ABSTENTION (no confident answer), not a lucky guess.",
+    "n_ok": 63,
+    "n_errors": 6,
+    "raw_reflection_accuracy_unconditional": 0.5714285714285714,
+    "validation_accept_rate": 0.5714285714285714,
+    "precision_when_validation_accepts": 1.0,
+    "accuracy_on_fallback_rows_tie_break_artifact": 0.3333333333333333,
+    "interpretation": "Validation accept rate (0.571) exactly equals raw accuracy (0.571) -- this is not a coincidence, it is mathematically forced: for a single-fault FaultLine instance, patching module X restores success if and only if X is the true fault module (that IS the ground-truth construction, Step 2.4). So validation accepts iff the reflection already guessed correctly. Precision when it accepts is 1.000 -- also forced by the same logic, not a discovery. The honest characterization of RCA here: reflection+validation gives a 100%-precision CONFIRMED answer 57.1% of the time, and abstains (uniform, no informative credit) the other 42.9% -- not a 71.4%-accurate classifier. This is a precision/coverage tradeoff finding, not an accuracy number, and should be written up as such."
+  }
+}

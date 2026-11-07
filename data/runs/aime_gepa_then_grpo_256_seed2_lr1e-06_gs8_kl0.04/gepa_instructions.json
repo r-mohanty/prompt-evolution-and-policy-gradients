@@ -1,0 +1,5 @@
+{
+  "plan": "Given a competition math problem, write a short plan: which technique\nor theorem applies, and the key steps, without doing the arithmetic yet.",
+  "solve": "Given a competition math problem and a solution plan, work the\nproblem to completion. End with the final answer inside \\boxed{...}.",
+  "verify": "Given a competition math problem and a proposed solution, check the\narithmetic and logic independently. If correct, restate the boxed answer\nunchanged. If incorrect, redo the calculation and give the corrected\nboxed answer."
+}

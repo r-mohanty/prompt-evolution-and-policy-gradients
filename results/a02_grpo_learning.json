@@ -1,0 +1,101 @@
+{
+  "grpo_learning": {
+    "n_runs": 6,
+    "mean_delta": 0.03734733588432286,
+    "se": 0.011336720041948202,
+    "t": 3.294368719182446,
+    "ci": [
+      0.008200628656474033,
+      0.06649404311217169
+    ],
+    "significant": true
+  },
+  "zero_gradient": {
+    "aime_dr_grpo": {
+      "frac": 0.459375,
+      "n_runs": 15
+    },
+    "aime_gepa_onpolicy_then_grpo": {
+      "frac": 0.6484375,
+      "n_runs": 3
+    },
+    "aime_gepa_then_grpo": {
+      "frac": 0.662109375,
+      "n_runs": 12
+    },
+    "aime_rca": {
+      "frac": 0.4498697916666667,
+      "n_runs": 12
+    },
+    "aime_rca_no_validate": {
+      "frac": 0.4580078125,
+      "n_runs": 12
+    },
+    "hotpotqa_docstring_then_grpo": {
+      "frac": 0.4375,
+      "n_runs": 3
+    },
+    "hotpotqa_dr_grpo": {
+      "frac": 0.2517578125,
+      "n_runs": 15
+    },
+    "hotpotqa_gepa_onpolicy_then_grpo": {
+      "frac": 0.3880208333333333,
+      "n_runs": 3
+    },
+    "hotpotqa_gepa_then_grpo": {
+      "frac": 0.3932291666666667,
+      "n_runs": 12
+    },
+    "hotpotqa_rca": {
+      "frac": 0.2581380208333333,
+      "n_runs": 12
+    },
+    "hotpotqa_rca_no_validate": {
+      "frac": 0.2545572916666667,
+      "n_runs": 12
+    }
+  },
+  "lr_control": {
+    "1e-05_vs_1e-06": {
+      "cell": [
+        "hotpotqa",
+        2048,
+        0
+      ],
+      "n_steps": 256,
+      "naive_t": 4.355900487076475,
+      "naive_mean": 0.015654809197279105,
+      "bootstrap": {
+        "mean": 0.015654809197279105,
+        "block": 20,
+        "n_boot": 10000,
+        "se": 0.0042312790195394604,
+        "ci_lo": 0.009032064987557849,
+        "ci_hi": 0.025487739142052438,
+        "excludes_zero": true
+      },
+      "caveat": "single cell; cluster-robust test not possible"
+    },
+    "3e-05_vs_1e-06": {
+      "cell": [
+        "hotpotqa",
+        2048,
+        0
+      ],
+      "n_steps": 256,
+      "naive_t": 3.1542830418562557,
+      "naive_mean": 0.012718492728286115,
+      "bootstrap": {
+        "mean": 0.012718492728286115,
+        "block": 20,
+        "n_boot": 10000,
+        "se": 0.005397281096705775,
+        "ci_lo": 0.00338863457940863,
+        "ci_hi": 0.02437577261784375,
+        "excludes_zero": true
+      },
+      "caveat": "single cell; cluster-robust test not possible"
+    }
+  }
+}

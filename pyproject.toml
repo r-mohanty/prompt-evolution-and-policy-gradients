@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflectrl"
+version = "0.1.0"
+description = "Composing reflective prompt evolution (GEPA) with multi-module Dr. GRPO, reflective credit assignment, and the FaultLine credit-localisation diagnostic."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "dspy-ai>=2.5",
+    "anthropic>=0.40",
+    "datasets>=2.20",
+    "rank-bm25>=0.2",
+    "optuna>=3.6",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "torch>=2.4",
+    "transformers>=4.45",
+    "peft>=0.13",
+    "trl>=0.11",
+    "accelerate>=0.34",
+    "bitsandbytes>=0.44",
+    "vllm>=0.6",
+]
+dev = ["pytest>=8.0"]
+
+
+[tool.setuptools.packages.find]
+include = ["reflectrl*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

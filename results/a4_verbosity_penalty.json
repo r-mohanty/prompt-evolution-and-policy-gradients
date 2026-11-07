@@ -1,0 +1,461 @@
+{
+  "n": 50,
+  "mean_raw": 0.1914693876518367,
+  "mean_parsed": 0.1914693876518367,
+  "mean_oracle": 0.4068545058016607,
+  "verbosity_penalty": 0.21538511814982403,
+  "n_contains": 18,
+  "n_under_credited": 13,
+  "rows": [
+    {
+      "raw": 0.09090909090909091,
+      "parsed": 0.09090909090909091,
+      "contains": false,
+      "oracle": 0.09090909090909091,
+      "n_chars": 26,
+      "gold": "Cha Cha Cohen were a band formed in 1994",
+      "out": "Swervedriver formed first."
+    },
+    {
+      "raw": 0.4,
+      "parsed": 0.4,
+      "contains": false,
+      "oracle": 0.4,
+      "n_chars": 13,
+      "gold": "Howard Elliott Ashman",
+      "out": "Howard Ashman"
+    },
+    {
+      "raw": 0.28571428571428575,
+      "parsed": 0.28571428571428575,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 29,
+      "gold": "Max Oph\u00fcls",
+      "out": "Max Oph\u00fcls passed away first."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 336,
+      "gold": "The Lorax",
+      "out": "Blow is a song by American singer and songwriter Kesha from her first extended play (EP), \"Cannibal\" (2010). The song was released on February 8, 2011. It was written by Kesha, along with Klas \u00c5hlund, Lukasz Gottwald, Allan Grigg, Benjamin Levin and Max Martin, with production done by Dr. Luke, Max "
+    },
+    {
+      "raw": 0.22222222222222224,
+      "parsed": 0.22222222222222224,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 44,
+      "gold": "Carrie Akre",
+      "out": "Carrie Akre is older than Shifty Shellshock."
+    },
+    {
+      "raw": 0.05128205128205129,
+      "parsed": 0.05128205128205129,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 265,
+      "gold": "Tsung-Dao Lee",
+      "out": "Henry Taube's son is not mentioned in the context. The correct answer is Tsung-Dao Lee, as his son, Richard Friedlander, is mentioned in the original query's context but not in the provided context. Therefore, the answer cannot be determined from the given context."
+    },
+    {
+      "raw": 0.1,
+      "parsed": 0.1,
+      "contains": false,
+      "oracle": 0.1,
+      "n_chars": 93,
+      "gold": "American playwright and Nobel laureate in Literature",
+      "out": "Clifford Odets was widely seen as successor to Nobel Prize-winning playwright Eugene O'Neill."
+    },
+    {
+      "raw": 1.0,
+      "parsed": 1.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 20,
+      "gold": "Beauty and the Beast",
+      "out": "Beauty and the Beast"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 13,
+      "gold": "Aubrey Posen",
+      "out": "Beca Mitchell"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 16,
+      "gold": "Alice Springs, Northern Territory",
+      "out": "TIO Traeger Park"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 4,
+      "gold": "1872",
+      "out": "1937"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 211,
+      "gold": "no",
+      "out": "The 1923 Tempe Normal Bulldogs football team was an American football team that represented Tempe Normal School (later renamed Arizona State University) as an independent during the 1923 college football season."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 12,
+      "gold": "Steven Wilson",
+      "out": "Robert Fripp"
+    },
+    {
+      "raw": 0.16666666666666663,
+      "parsed": 0.16666666666666663,
+      "contains": false,
+      "oracle": 0.16666666666666663,
+      "n_chars": 71,
+      "gold": "Gabriel Jos\u00e9 de la Concordia Garc\u00eda M\u00e1rquez",
+      "out": "Gabriel Garc\u00eda M\u00e1rquez has won more literary awards than Annie Dillard."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 4,
+      "gold": "1876",
+      "out": "1812"
+    },
+    {
+      "raw": 0.2,
+      "parsed": 0.2,
+      "contains": false,
+      "oracle": 0.2,
+      "n_chars": 18,
+      "gold": "IK Start",
+      "out": "Viking beat Start."
+    },
+    {
+      "raw": 0.15384615384615385,
+      "parsed": 0.15384615384615385,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 73,
+      "gold": "Vin Diesel",
+      "out": "Vin Diesel portrayed Dominic Toretto in all eight films of the franchise."
+    },
+    {
+      "raw": 1.0,
+      "parsed": 1.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 13,
+      "gold": "United States",
+      "out": "United States"
+    },
+    {
+      "raw": 0.10526315789473684,
+      "parsed": 0.10526315789473684,
+      "contains": false,
+      "oracle": 0.10526315789473684,
+      "n_chars": 119,
+      "gold": "Boeing EA-18G Growler",
+      "out": "Electronic Attack Squadron 138 is a type of EA-18G Growler, a specialized version of the two-seat F/A-18F Super Hornet."
+    },
+    {
+      "raw": 1.0,
+      "parsed": 1.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 8,
+      "gold": "Walldorf",
+      "out": "Walldorf"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 64,
+      "gold": "Nashville",
+      "out": "The 2003 NHL Entry Draft was held in Philadelphia, Pennsylvania."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 95,
+      "gold": "Boyd Gaming",
+      "out": "The CMLL 79th Anniversary Show took place in Arena M\u00e9xico, which is owned and operated by CMLL."
+    },
+    {
+      "raw": 0.14285714285714285,
+      "parsed": 0.14285714285714285,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 42,
+      "gold": "Clianthus",
+      "out": "Clianthus has more species than Callicoma."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 8,
+      "gold": "Dumfries and Galloway,",
+      "out": "Ayrshire"
+    },
+    {
+      "raw": 0.07692307692307693,
+      "parsed": 0.07692307692307693,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 80,
+      "gold": "Innviertel",
+      "out": "Fucking in Austria is located in the Innviertel region of western Upper Austria."
+    },
+    {
+      "raw": 0.28571428571428575,
+      "parsed": 0.28571428571428575,
+      "contains": false,
+      "oracle": 0.28571428571428575,
+      "n_chars": 21,
+      "gold": "Antonio Hilari\u00f3n Zea D\u00edaz",
+      "out": "Francisco Antonio Zea"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 8,
+      "gold": "Pakistani",
+      "out": "Pakistan"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 71,
+      "gold": "Lamar Wyatt",
+      "out": "Shweta Munshi played the role of Arpita in the Zee TV show Punar Vivah."
+    },
+    {
+      "raw": 0.04761904761904762,
+      "parsed": 0.04761904761904762,
+      "contains": false,
+      "oracle": 0.04761904761904762,
+      "n_chars": 108,
+      "gold": "13 seasons",
+      "out": "Terry Bradshaw was inducted into the Pro Football Hall of Fame in 1989 and played in the NFL for 14 seasons."
+    },
+    {
+      "raw": 1.0,
+      "parsed": 1.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 15,
+      "gold": "January 4, 1976",
+      "out": "January 4, 1976"
+    },
+    {
+      "raw": 0.28571428571428575,
+      "parsed": 0.28571428571428575,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 48,
+      "gold": "Neville Chamberlain",
+      "out": "Neville Chamberlain signed the Munich Agreement."
+    },
+    {
+      "raw": 0.4000000000000001,
+      "parsed": 0.4000000000000001,
+      "contains": false,
+      "oracle": 0.4000000000000001,
+      "n_chars": 61,
+      "gold": "The film was originally set to be released in May 2008",
+      "out": "The movie was originally supposed to be released in May 2008."
+    },
+    {
+      "raw": 0.2,
+      "parsed": 0.2,
+      "contains": false,
+      "oracle": 0.2,
+      "n_chars": 12,
+      "gold": "David May",
+      "out": "Harry D. May"
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 91,
+      "gold": "fifteen",
+      "out": "The series of novels of which \"Shadows in Flight\" is the tenth novel consists of 12 novels."
+    },
+    {
+      "raw": 0.034482758620689655,
+      "parsed": 0.034482758620689655,
+      "contains": false,
+      "oracle": 0.034482758620689655,
+      "n_chars": 175,
+      "gold": "40 Acres and a Mule Filmworks",
+      "out": "Jungle is a production company owned by Executive Producer Jason Burrows, Writer / Director Trent O'Donnell, Writer/ Performer Phil Lloyd and Head of Production Chloe Rickard."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 74,
+      "gold": "Harry Booth",
+      "out": "Pat Ashton starred in the 1971 film \"On the Buses,\" directed by Brian Rix."
+    },
+    {
+      "raw": 0.07142857142857142,
+      "parsed": 0.07142857142857142,
+      "contains": false,
+      "oracle": 0.07142857142857142,
+      "n_chars": 90,
+      "gold": "Tufts College",
+      "out": "Vivian Pinn previously taught at Harvard University and Tufts University in Massachusetts."
+    },
+    {
+      "raw": 0.28571428571428575,
+      "parsed": 0.28571428571428575,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 107,
+      "gold": "Boston and Maine Railroad's Southern Division",
+      "out": "The Boston and Lowell Railroad later operated as part of the Boston and Maine Railroad's Southern Division."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 22,
+      "gold": "Madam C. J. Walker",
+      "out": "The Sara Delany Award."
+    },
+    {
+      "raw": 0.18181818181818182,
+      "parsed": 0.18181818181818182,
+      "contains": false,
+      "oracle": 0.18181818181818182,
+      "n_chars": 136,
+      "gold": "William Bradley DuVall (born September 6, 1967)",
+      "out": "William DuVall was born on September 6, 1967, and \"Black Gives Way to Blue\" was certified gold on May 26, 2010, making him 43 years old."
+    },
+    {
+      "raw": 1.0,
+      "parsed": 1.0,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 3,
+      "gold": "no",
+      "out": "No."
+    },
+    {
+      "raw": 0.17647058823529413,
+      "parsed": 0.17647058823529413,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 83,
+      "gold": "Cartoon Network Too",
+      "out": "Nick Jr. Too was launched on the same day as the rival channel Cartoon Network Too."
+    },
+    {
+      "raw": 0.05882352941176471,
+      "parsed": 0.05882352941176471,
+      "contains": false,
+      "oracle": 0.05882352941176471,
+      "n_chars": 79,
+      "gold": "46 Albert Square, Walford, London E20",
+      "out": "The Queen Victoria public house, located at 209-211 Bethnal Green Road, London."
+    },
+    {
+      "raw": 0.16666666666666669,
+      "parsed": 0.16666666666666669,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 66,
+      "gold": "Gloria Trevi",
+      "out": "\"Todos Me Miran\" is a single from the Mexican artist Gloria Trevi."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 16,
+      "gold": "John Gielgud",
+      "out": "Nicol Williamson"
+    },
+    {
+      "raw": 0.25,
+      "parsed": 0.25,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 36,
+      "gold": "Old Dogs",
+      "out": "Old Dogs was released more recently."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 101,
+      "gold": "McDonnell Douglas",
+      "out": "The manufacturer of the plane that shot down Jameel Sayhood is not mentioned in the provided context."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 93,
+      "gold": "Sun",
+      "out": "Gary L. Bennett was a part of the space missions that have a primary destination of the Moon."
+    },
+    {
+      "raw": 0.0,
+      "parsed": 0.0,
+      "contains": false,
+      "oracle": 0.0,
+      "n_chars": 301,
+      "gold": "25",
+      "out": "\"Moonlight Shadow\" is a song written and performed by English multi-instrumentalist Mike Oldfield, released as a single in May 1983 by Virgin Records, and included in the album \"Crises\" of the same year. It is Oldfield's most successful single, reaching number one on a number of charts around Europe"
+    },
+    {
+      "raw": 0.13333333333333336,
+      "parsed": 0.13333333333333336,
+      "contains": true,
+      "oracle": 1.0,
+      "n_chars": 87,
+      "gold": "$60 million",
+      "out": "The budget of the film in which Kodi Smit-McPhee voiced Norman Babcock was $60 million."
+    }
+  ]
+}

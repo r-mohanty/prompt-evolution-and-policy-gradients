@@ -1,0 +1,101 @@
+{
+  "DEFAULT": {
+    "raw": [
+      0.0,
+      0.1111111111111111,
+      0.10526315789473684,
+      0.0,
+      0.10526315789473684,
+      0.14285714285714285,
+      0.1,
+      0.14285714285714285
+    ],
+    "parsed": [
+      0.0,
+      0.1111111111111111,
+      0.10526315789473684,
+      0.0,
+      0.10526315789473684,
+      0.14285714285714285,
+      0.1,
+      0.14285714285714285
+    ],
+    "had_marker": 0,
+    "outputs": [
+      "Swervedriver",
+      "Howard Ashman wrote the lyrics for both \"Little Shop of Horrors\" and the song \"Be Our Guest.\"",
+      "Max Oph\u00fcls worked with Jacques Becker on the set of \"Casque d'or\" and with Marcel Carn\u00e9 on \"Wasteland\".",
+      "Victorious: Music from the Hit TV Show",
+      "Shifty Shellshock was born on April 17, 1957, while Carrie Akre was born on September 24, 1966.",
+      "Tsung-Dao Lee has a son who became an American chemist teaching at Cornell University.",
+      "Clifford Odets was widely seen as successor to Nobel Prize-winning playwright Eugene O'Neill.",
+      "Beauty and the Beast (1991 film) is based on the 1946 French film of the same name directed by Jean Cocteau."
+    ]
+  },
+  "GEPA": {
+    "raw": [
+      1.0,
+      0.4,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "parsed": [
+      1.0,
+      0.4,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "had_marker": 0,
+    "outputs": [
+      "Cha Cha Cohen were a band formed in 1994",
+      "Howard Ashman",
+      "Max Oph\u00fcls",
+      "Deck the Halls (2006 film)",
+      "September 24, 1966",
+      "Tsung-Dao Lee",
+      "Eugene O'Neill",
+      "Beauty and the Beast"
+    ]
+  },
+  "GEPA_CONSTRAINED": {
+    "raw": [
+      0.0,
+      0.4,
+      0.25,
+      0.0,
+      0.10526315789473684,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parsed": [
+      0.0,
+      0.4,
+      0.25,
+      0.0,
+      0.10526315789473684,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "had_marker": 0,
+    "outputs": [
+      "Swervedriver",
+      "Howard Ashman",
+      "Max Oph\u00fcls died before Shirley Clarke",
+      "Rock Me",
+      "Carrie Akre was born on September 24, 1966, and Shifty Shellshock was born on August 23, 1974.",
+      "Henry Taube",
+      "Eugene O'Neill",
+      "Beauty and the Beast"
+    ]
+  }
+}

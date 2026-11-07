@@ -1,0 +1,20 @@
+{
+  "task": "hotpotqa",
+  "seed": 2,
+  "task_model": "Qwen/Qwen3-8B",
+  "task_model_served_at": "http://localhost:8000/v1",
+  "reflection_model": "anthropic/claude-sonnet-5",
+  "max_metric_calls": 100,
+  "n_train": 15,
+  "n_val": 20,
+  "wall_seconds": 209.5,
+  "api_cost_usd_this_process": 0.1435,
+  "instruction_chars": {
+    "generate_query": 197,
+    "generate_answer": 190
+  },
+  "instructions": {
+    "generate_query": "Given a multi-hop question, write a short search query that would\nretrieve a Wikipedia passage containing the next piece of evidence needed\nto answer it. Do not try to answer the question directly.",
+    "generate_answer": "Given a multi-hop question and retrieved context passages, answer the\nquestion. Answer with the shortest span of text that correctly answers\nthe question \u2014 no full sentences, no explanation."
+  }
+}

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="958" height="418" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+
+  <!-- column 1: programs -->
+  <text x="30" y="40" font-size="15" font-weight="bold" fill="#24292f">1. Compound LM program (DSPy)</text>
+  <rect x="30" y="56" width="270" height="62" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="44" y="80" font-size="13" font-weight="bold" fill="#0a3069">HotpotQA (2 modules)</text>
+  <text x="44" y="102" font-size="12.5" fill="#24292f">query  →  BM25 retrieval  →  answer</text>
+  <rect x="30" y="130" width="270" height="62" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="44" y="154" font-size="13" font-weight="bold" fill="#0a3069">Competition math (3 modules)</text>
+  <text x="44" y="176" font-size="12.5" fill="#24292f">plan  →  solve  →  verify</text>
+
+  <!-- column 2: starting instructions -->
+  <text x="345" y="40" font-size="15" font-weight="bold" fill="#24292f">2. Starting instructions</text>
+  <rect x="345" y="56" width="270" height="136" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="359" y="80" font-size="12.5" fill="#24292f">• trainer defaults</text>
+  <text x="359" y="102" font-size="12.5" fill="#24292f">• DSPy seed docstrings (no search)</text>
+  <text x="359" y="124" font-size="12.5" fill="#24292f">• GEPA-evolved, Haiku 4.5 task model</text>
+  <text x="359" y="146" font-size="12.5" fill="#24292f">• GEPA-evolved on-policy (Qwen3-8B)</text>
+  <text x="359" y="176" font-size="11.5" fill="#57606a">GEPA: Sonnet 5 reflection, 100 metric calls</text>
+
+  <!-- column 3: training -->
+  <text x="660" y="40" font-size="15" font-weight="bold" fill="#24292f">3. Policy training</text>
+  <rect x="660" y="56" width="270" height="62" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text x="674" y="80" font-size="13" font-weight="bold" fill="#044f1e">Multi-module Dr. GRPO</text>
+  <text x="674" y="102" font-size="12.5" fill="#24292f">Qwen3-8B · LoRA r16 · group size 8</text>
+  <rect x="660" y="130" width="270" height="62" rx="8" fill="#fbefff" stroke="#c297ff"/>
+  <text x="674" y="154" font-size="13" font-weight="bold" fill="#512a97">RCA (optional)</text>
+  <text x="674" y="176" font-size="12.5" fill="#24292f">LM critique → per-module advantage mask</text>
+
+  <!-- arrows across the top -->
+  <line x1="302" y1="124" x2="341" y2="124" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="617" y1="87" x2="656" y2="87" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="795" y1="128" x2="795" y2="122" stroke="#8250df" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- outcome row -->
+  <rect x="660" y="212" width="270" height="44" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="674" y="239" font-size="12.5" fill="#24292f">reward per cell, budgets 128 to 8,192 rollouts</text>
+  <line x1="795" y1="194" x2="795" y2="208" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- FaultLine row -->
+  <text x="30" y="300" font-size="15" font-weight="bold" fill="#24292f">4. FaultLine diagnostic (credit localisation with verified ground truth)</text>
+  <rect x="30" y="316" width="900" height="72" rx="8" fill="#ffebe9" stroke="#ff8182"/>
+  <text x="48" y="345" font-size="12.5" fill="#24292f">inject one fault into one module</text>
+  <text x="48" y="367" font-size="11.5" fill="#57606a">69 instances, both programs</text>
+  <line x1="262" y1="350" x2="300" y2="350" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="310" y="345" font-size="12.5" fill="#24292f">verify counterfactually</text>
+  <text x="310" y="367" font-size="11.5" fill="#57606a">patching the module restores success</text>
+  <line x1="530" y1="350" x2="568" y2="350" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="578" y="345" font-size="12.5" fill="#24292f">ask localisers which module failed</text>
+  <text x="578" y="367" font-size="11.5" fill="#57606a">LM judge (± trace), RCA, Shapley, uniform</text>
+  <line x1="165" y1="194" x2="165" y2="282" stroke="#57606a" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+</svg>

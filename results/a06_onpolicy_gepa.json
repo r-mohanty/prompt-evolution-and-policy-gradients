@@ -1,0 +1,175 @@
+{
+  "budget": 2048,
+  "per_task": {
+    "hotpotqa": {
+      "rows": [
+        {
+          "seed": 0,
+          "dr_grpo": 0.14596098430714965,
+          "transplanted": 0.056705572894859314,
+          "onpolicy": 0.02623285602774728,
+          "docstring": 0.30743596157931247,
+          "onpolicy_zero_frac": 0.2890625,
+          "docstring_zero_frac": 0.4375,
+          "dr_grpo_zero_frac": 0.2265625
+        },
+        {
+          "seed": 1,
+          "dr_grpo": 0.14080259556958138,
+          "transplanted": 0.30555562760117816,
+          "onpolicy": 0.3054254097957155,
+          "docstring": 0.30595058766293554,
+          "onpolicy_zero_frac": 0.4296875,
+          "docstring_zero_frac": 0.4296875,
+          "dr_grpo_zero_frac": 0.25
+        },
+        {
+          "seed": 2,
+          "dr_grpo": 0.1442436753308692,
+          "transplanted": 0.26136531190240464,
+          "onpolicy": 0.30186734950795663,
+          "docstring": 0.30141044842427733,
+          "onpolicy_zero_frac": 0.4453125,
+          "docstring_zero_frac": 0.4453125,
+          "dr_grpo_zero_frac": 0.25390625
+        }
+      ],
+      "onpolicy_minus_dr_grpo": {
+        "n": 3,
+        "mean_diff": 0.06750612004127304,
+        "se": 0.0936389249520248,
+        "t": 0.7209194261452627,
+        "ci": [
+          -0.3354221740272897,
+          0.4704344141098358
+        ],
+        "n_positive": 2,
+        "significant": false,
+        "diffs": [
+          -0.11972812827940238,
+          0.1646228142261341,
+          0.15762367417708742
+        ]
+      },
+      "onpolicy_minus_transplanted": {
+        "n": 3,
+        "mean_diff": 0.0032997009776590896,
+        "se": 0.020560295071308715,
+        "t": 0.16048898939508532,
+        "ci": [
+          -0.0851712487141823,
+          0.09177065066950049
+        ],
+        "n_positive": 1,
+        "significant": false,
+        "diffs": [
+          -0.030472716867112035,
+          -0.00013021780546268458,
+          0.04050203760555199
+        ]
+      },
+      "docstring_minus_dr_grpo": {
+        "n": 3,
+        "mean_diff": 0.16126324748630835,
+        "se": 0.002306410364465262,
+        "t": 69.91958151545032,
+        "ci": [
+          0.15133876368801433,
+          0.17118773128460238
+        ],
+        "n_positive": 3,
+        "significant": true,
+        "diffs": [
+          0.1614749772721628,
+          0.16514799209335415,
+          0.15716677309340812
+        ]
+      },
+      "docstring_minus_transplanted": {
+        "n": 3,
+        "mean_diff": 0.0970568284226944,
+        "se": 0.07768463268449101,
+        "t": 1.2493697282045702,
+        "ci": [
+          -0.23722014601867036,
+          0.4313338028640592
+        ],
+        "n_positive": 3,
+        "significant": false,
+        "diffs": [
+          0.25073038868445313,
+          0.00039496006175737675,
+          0.04004513652187269
+        ]
+      }
+    },
+    "aime": {
+      "rows": [
+        {
+          "seed": 0,
+          "dr_grpo": 0.380859375,
+          "transplanted": 0.203125,
+          "onpolicy": 0.19482421875,
+          "docstring": null,
+          "onpolicy_zero_frac": 0.6953125,
+          "docstring_zero_frac": null,
+          "dr_grpo_zero_frac": 0.421875
+        },
+        {
+          "seed": 1,
+          "dr_grpo": 0.3916015625,
+          "transplanted": 0.20263671875,
+          "onpolicy": 0.2080078125,
+          "docstring": null,
+          "onpolicy_zero_frac": 0.66796875,
+          "docstring_zero_frac": null,
+          "dr_grpo_zero_frac": 0.41796875
+        },
+        {
+          "seed": 2,
+          "dr_grpo": 0.3798828125,
+          "transplanted": 0.1982421875,
+          "onpolicy": 0.22705078125,
+          "docstring": null,
+          "onpolicy_zero_frac": 0.58203125,
+          "docstring_zero_frac": null,
+          "dr_grpo_zero_frac": 0.44140625
+        }
+      ],
+      "onpolicy_minus_dr_grpo": {
+        "n": 3,
+        "mean_diff": -0.17415364583333334,
+        "se": 0.010684077755388223,
+        "t": -16.30029749133038,
+        "ci": [
+          -0.22012723241476886,
+          -0.12818005925189782
+        ],
+        "n_positive": 0,
+        "significant": true,
+        "diffs": [
+          -0.18603515625,
+          -0.18359375,
+          -0.15283203125
+        ]
+      },
+      "onpolicy_minus_transplanted": {
+        "n": 3,
+        "mean_diff": 0.008626302083333334,
+        "se": 0.01083549282362841,
+        "t": 0.7961153427670954,
+        "ci": [
+          -0.037998823536739716,
+          0.05525142770340639
+        ],
+        "n_positive": 2,
+        "significant": false,
+        "diffs": [
+          -0.00830078125,
+          0.00537109375,
+          0.02880859375
+        ]
+      }
+    }
+  }
+}

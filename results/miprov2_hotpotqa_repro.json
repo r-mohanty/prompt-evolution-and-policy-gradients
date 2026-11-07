@@ -1,0 +1,16 @@
+{
+  "task": "hotpotqa",
+  "optimizer": "MIPROv2",
+  "task_model": "anthropic/claude-haiku-4-5",
+  "prompt_model": "anthropic/claude-sonnet-5",
+  "auto_preset": "light",
+  "n_train": 15,
+  "n_val": 20,
+  "n_test": 15,
+  "baseline_em_f1": 0.2302,
+  "optimized_em_f1": 0.267,
+  "gap": 0.03680000000000003,
+  "optimize_wall_seconds": 246.78213000000687,
+  "optimize_cost_usd": 2.4814649999999983,
+  "total_cost_usd_at_completion": 2.6091969999999973
+}

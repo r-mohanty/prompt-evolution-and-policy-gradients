@@ -1,0 +1,22 @@
+{
+  "task": "aime",
+  "seed": 0,
+  "task_model": "Qwen/Qwen3-8B",
+  "task_model_served_at": "http://localhost:8000/v1",
+  "reflection_model": "anthropic/claude-sonnet-5",
+  "max_metric_calls": 100,
+  "n_train": 15,
+  "n_val": 20,
+  "wall_seconds": 869.7,
+  "api_cost_usd_this_process": 0.4282,
+  "instruction_chars": {
+    "plan": 142,
+    "solve": 131,
+    "verify": 223
+  },
+  "instructions": {
+    "plan": "Given a competition math problem, write a short plan: which technique\nor theorem applies, and the key steps, without doing the arithmetic yet.",
+    "solve": "Given a competition math problem and a solution plan, work the\nproblem to completion. End with the final answer inside \\boxed{...}.",
+    "verify": "Given a competition math problem and a proposed solution, check the\narithmetic and logic independently. If correct, restate the boxed answer\nunchanged. If incorrect, redo the calculation and give the corrected\nboxed answer."
+  }
+}

@@ -1,0 +1,2834 @@
+{
+  "summary": {
+    "flat_reflection": {
+      "n_instances": 58,
+      "n_errors": 11,
+      "localization_accuracy": 0.5862068965517241,
+      "calibration_ece": 0.22241379310344828,
+      "total_cost_usd": 3.09876,
+      "mean_cost_usd_per_instance": 0.044909565217391305
+    },
+    "recursive_reflector": {
+      "n_instances": 69,
+      "n_errors": 0,
+      "localization_accuracy": 0.391304347826087,
+      "calibration_ece": 0.3723188405797101,
+      "total_cost_usd": 3.22912,
+      "mean_cost_usd_per_instance": 0.04679884057971014
+    },
+    "shapley_ablate_rescore": {
+      "n_instances": 53,
+      "n_errors": 16,
+      "localization_accuracy": 1.0,
+      "calibration_ece": 0.13850227216188407,
+      "total_cost_usd": 5.252000000000001,
+      "mean_cost_usd_per_instance": 0.07611594202898551
+    },
+    "uniform": {
+      "n_instances": 69,
+      "n_errors": 0,
+      "localization_accuracy": 0.5217391304347826,
+      "calibration_ece": 0.0748792270531401,
+      "total_cost_usd": 0.0,
+      "mean_cost_usd_per_instance": 0.0
+    }
+  },
+  "per_instance": {
+    "flat_reflection": [
+      {
+        "instance_idx": 2,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9,
+        "cost_usd": 0.01083,
+        "latency_s": 8.818931700021494
+      },
+      {
+        "instance_idx": 1,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.014948000000000001,
+        "latency_s": 8.82011989998864
+      },
+      {
+        "instance_idx": 5,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.007612000000000001,
+        "latency_s": 8.816241100023035
+      },
+      {
+        "instance_idx": 4,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.55,
+        "cost_usd": 0.00841,
+        "latency_s": 8.817519600037485
+      },
+      {
+        "instance_idx": 3,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.55,
+        "cost_usd": 0.008264,
+        "latency_s": 8.81815079995431
+      },
+      {
+        "instance_idx": 0,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.009122,
+        "latency_s": 8.820817500003614
+      },
+      {
+        "instance_idx": 7,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.75,
+        "cost_usd": 0.007722,
+        "latency_s": 0.0589443999924697
+      },
+      {
+        "instance_idx": 6,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.015224000000000001,
+        "latency_s": 0.060444200003985316
+      },
+      {
+        "instance_idx": 9,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.015172000000000001,
+        "latency_s": 0.05104320001555607
+      },
+      {
+        "instance_idx": 8,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.65,
+        "cost_usd": 0.007116,
+        "latency_s": 0.0477200000314042
+      },
+      {
+        "instance_idx": 10,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.020588,
+        "latency_s": 0.05119500000728294
+      },
+      {
+        "instance_idx": 11,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.020176,
+        "latency_s": 0.019319500017445534
+      },
+      {
+        "instance_idx": 12,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.019836,
+        "latency_s": 0.007611700042616576
+      },
+      {
+        "instance_idx": 13,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.023309999999999997,
+        "latency_s": 0.42702649999409914
+      },
+      {
+        "instance_idx": 15,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.02306,
+        "latency_s": 0.016865700017660856
+      },
+      {
+        "instance_idx": 17,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.008914,
+        "latency_s": 0.00808370002778247
+      },
+      {
+        "instance_idx": 18,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.019572,
+        "latency_s": 0.006734199996571988
+      },
+      {
+        "instance_idx": 16,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.01732,
+        "latency_s": 0.009382600022945553
+      },
+      {
+        "instance_idx": 14,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.02388,
+        "latency_s": 0.032756000000517815
+      },
+      {
+        "instance_idx": 19,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.65,
+        "cost_usd": 0.020816,
+        "latency_s": 0.01722510001854971
+      },
+      {
+        "instance_idx": 22,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.75,
+        "cost_usd": 0.019756,
+        "latency_s": 0.005319999996572733
+      },
+      {
+        "instance_idx": 24,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.019964000000000003,
+        "latency_s": 0.01616559998365119
+      },
+      {
+        "instance_idx": 23,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.019244,
+        "latency_s": 0.017532200028654188
+      },
+      {
+        "instance_idx": 21,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.040204000000000004,
+        "latency_s": 0.004260900022927672
+      },
+      {
+        "instance_idx": 25,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.022724,
+        "latency_s": 0.007661800016649067
+      },
+      {
+        "instance_idx": 20,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.75,
+        "cost_usd": 0.031031999999999997,
+        "latency_s": 0.01845329999923706
+      },
+      {
+        "instance_idx": 26,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.65,
+        "cost_usd": 0.019756,
+        "latency_s": 0.2732020000112243
+      },
+      {
+        "instance_idx": 28,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.008948,
+        "latency_s": 0.007857699994929135
+      },
+      {
+        "instance_idx": 27,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.020044,
+        "latency_s": 0.027918200008571148
+      },
+      {
+        "instance_idx": 29,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.020444,
+        "latency_s": 0.01538650004658848
+      },
+      {
+        "instance_idx": 30,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.020352,
+        "latency_s": 0.004449700005352497
+      },
+      {
+        "instance_idx": 34,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.021044,
+        "latency_s": 0.22871200001100078
+      },
+      {
+        "instance_idx": 36,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.020144000000000002,
+        "latency_s": 0.005540699989069253
+      },
+      {
+        "instance_idx": 32,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.017452000000000002,
+        "latency_s": 0.032980000018142164
+      },
+      {
+        "instance_idx": 35,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.65,
+        "cost_usd": 0.019616,
+        "latency_s": 0.02646889997413382
+      },
+      {
+        "instance_idx": 31,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.017572,
+        "latency_s": 0.09020969999255612
+      },
+      {
+        "instance_idx": 37,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.75,
+        "cost_usd": 0.017571999999999997,
+        "latency_s": 0.004199800023343414
+      },
+      {
+        "instance_idx": 33,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.016924,
+        "latency_s": 0.1173187000094913
+      },
+      {
+        "instance_idx": 39,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.65,
+        "cost_usd": 0.06412200000000001,
+        "latency_s": 0.00560500001301989
+      },
+      {
+        "instance_idx": 40,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.050476,
+        "latency_s": 0.005844399973284453
+      },
+      {
+        "instance_idx": 38,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.65,
+        "cost_usd": 0.047726000000000005,
+        "latency_s": 0.01124379999237135
+      },
+      {
+        "instance_idx": 41,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.06496,
+        "latency_s": 0.1520042999763973
+      },
+      {
+        "instance_idx": 47,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.031808,
+        "latency_s": 0.00399429997196421
+      },
+      {
+        "instance_idx": 44,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.35,
+        "cost_usd": 0.03323,
+        "latency_s": 0.005657500005327165
+      },
+      {
+        "instance_idx": 43,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.3,
+        "cost_usd": 0.019024,
+        "latency_s": 0.06288219999987632
+      },
+      {
+        "instance_idx": 42,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.3,
+        "cost_usd": 0.018014,
+        "latency_s": 0.004539799992926419
+      },
+      {
+        "instance_idx": 45,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.016888,
+        "latency_s": 0.0685183999594301
+      },
+      {
+        "instance_idx": 46,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.019816,
+        "latency_s": 0.014788800035603344
+      },
+      {
+        "instance_idx": 48,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.037115999999999996,
+        "latency_s": 0.004363399988505989
+      },
+      {
+        "instance_idx": 51,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 49,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: Adapter JSONAdapter failed to parse the LM response. \n\nLM Response: {\n  \"reasoning\": \"The correct solution to this problem completes the square as (a-5)^2+(b-7)^2+(c-11)^2+(u-18)^2=0 (with u=sqrt(10a+14b+22c-d)), giving a=5,b=7,c=11,u=18, and then d=66, so a+b+c+d=89. The 'plan' module correctly identified the strategy: rewrite as a sum of squares equal to zero by matching coefficients of a, b, c and the sqrt term. This plan is sound and would lead to the correct answer if executed correctly.\\n\\nHowever, the 'solve' module botched the coefficient matching. It incorrectly computed alpha=180 (from -2alpha+360=0, using coefficient 360a instead of the correct 10a term directly, apparently multiplying 10 by 36 to get 360, a wrong scaling), instead of the correct alpha=5 (matching -2*alpha*a = 10a directly gives alpha=5, since the a^2 term coefficient is 1, not 36). This reflects a fundamental algebraic error in the completing-the-square derivation: the solver conflated the substitution u^2=10a+14b+22c-d with an incorrect multiplication by 36, leading to absurdly large values for a,b,c (180,252,396) that don't even satisfy the original equation (as later confirmed by the verify module's own consistency check finding contradictions). This single error propagated through the entire computation, producing a wrong d and a wrong nonsensical final sum.\\n\\nThe 'verify' module did attempt to check the work and found inconsistencies, correctly noting problems, but ultimately failed to catch/fix the root error and just echoed the flawed answer (59471/4) as the 'verified' output rather than redoing the algebra correctly. Still, the primary source of the wrong answer is the incorrect algebraic derivation in 'solve' \u2014 had solve correctly matched coefficients (getting a=5,b=7,c=11,d=66), the final \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\nActual output fields parsed from the LM response: [reasoning] \n\n"
+      },
+      {
+        "instance_idx": 52,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 56,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.55,
+        "cost_usd": 0.9067699999999999,
+        "latency_s": 0.011453499959316105
+      },
+      {
+        "instance_idx": 50,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 57,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.09149199999999999,
+        "latency_s": 0.014425299945287406
+      },
+      {
+        "instance_idx": 53,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 60,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.046944,
+        "latency_s": 0.0033706999965943396
+      },
+      {
+        "instance_idx": 59,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.186226,
+        "latency_s": 0.00414400000590831
+      },
+      {
+        "instance_idx": 55,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 54,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 63,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.31589999999999996,
+        "latency_s": 0.00640489999204874
+      },
+      {
+        "instance_idx": 58,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 64,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.09968000000000002,
+        "latency_s": 0.01075349998427555
+      },
+      {
+        "instance_idx": 67,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.08386400000000001,
+        "latency_s": 0.007154199993237853
+      },
+      {
+        "instance_idx": 66,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.19571600000000003,
+        "latency_s": 0.009405000018887222
+      },
+      {
+        "instance_idx": 68,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.094304,
+        "latency_s": 0.004994700022507459
+      },
+      {
+        "instance_idx": 65,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 62,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      },
+      {
+        "instance_idx": 61,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n"
+      }
+    ],
+    "recursive_reflector": [
+      {
+        "instance_idx": 2,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.95,
+        "cost_usd": 0.028408000000000003,
+        "latency_s": 10.932959099998698
+      },
+      {
+        "instance_idx": 1,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "none",
+        "correct": false,
+        "confidence": 0.95,
+        "cost_usd": 0.04548,
+        "latency_s": 6.271286099974532
+      },
+      {
+        "instance_idx": 5,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8,
+        "cost_usd": 0.028794,
+        "latency_s": 8.826192900014576
+      },
+      {
+        "instance_idx": 4,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.025376,
+        "latency_s": 6.9156741999904625
+      },
+      {
+        "instance_idx": 3,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.036568,
+        "latency_s": 7.925415500008967
+      },
+      {
+        "instance_idx": 0,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.55,
+        "cost_usd": 0.119402,
+        "latency_s": 25.946844100020826
+      },
+      {
+        "instance_idx": 7,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "none",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.032514,
+        "latency_s": 6.309140099969227
+      },
+      {
+        "instance_idx": 6,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.029088000000000003,
+        "latency_s": 7.743875999993179
+      },
+      {
+        "instance_idx": 9,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8,
+        "cost_usd": 0.024249999999999997,
+        "latency_s": 8.631867400021292
+      },
+      {
+        "instance_idx": 8,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.030814,
+        "latency_s": 8.990202699962538
+      },
+      {
+        "instance_idx": 10,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.052718,
+        "latency_s": 11.10330309998244
+      },
+      {
+        "instance_idx": 11,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9,
+        "cost_usd": 0.029662,
+        "latency_s": 7.3220056999707595
+      },
+      {
+        "instance_idx": 12,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "none",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.03311800000000001,
+        "latency_s": 9.749693399993703
+      },
+      {
+        "instance_idx": 13,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.050845999999999995,
+        "latency_s": 14.512012900027912
+      },
+      {
+        "instance_idx": 15,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.038368,
+        "latency_s": 12.189287099987268
+      },
+      {
+        "instance_idx": 17,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.045942,
+        "latency_s": 14.024623300007079
+      },
+      {
+        "instance_idx": 18,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.040782,
+        "latency_s": 14.926769499958027
+      },
+      {
+        "instance_idx": 16,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.55,
+        "cost_usd": 0.05534599999999999,
+        "latency_s": 18.72976469999412
+      },
+      {
+        "instance_idx": 14,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.65,
+        "cost_usd": 0.051964,
+        "latency_s": 23.084917599975597
+      },
+      {
+        "instance_idx": 19,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.8,
+        "cost_usd": 0.04525800000000001,
+        "latency_s": 10.099201500008348
+      },
+      {
+        "instance_idx": 22,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.05009600000000001,
+        "latency_s": 9.551688199979253
+      },
+      {
+        "instance_idx": 24,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9,
+        "cost_usd": 0.030296000000000003,
+        "latency_s": 7.149461399996653
+      },
+      {
+        "instance_idx": 23,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "none",
+        "correct": false,
+        "confidence": 0.85,
+        "cost_usd": 0.033376,
+        "latency_s": 8.60571589996107
+      },
+      {
+        "instance_idx": 21,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.059578000000000006,
+        "latency_s": 17.973132500017527
+      },
+      {
+        "instance_idx": 25,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.03333,
+        "latency_s": 9.852987399965059
+      },
+      {
+        "instance_idx": 20,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.0,
+        "cost_usd": 0.060525999999999996,
+        "latency_s": 26.056189999973867
+      },
+      {
+        "instance_idx": 26,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7,
+        "cost_usd": 0.031386,
+        "latency_s": 7.039482599997427
+      },
+      {
+        "instance_idx": 28,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.030182,
+        "latency_s": 8.595504800032359
+      },
+      {
+        "instance_idx": 27,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "none",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.032576,
+        "latency_s": 8.102667600032873
+      },
+      {
+        "instance_idx": 29,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.04338600000000001,
+        "latency_s": 9.450927599973511
+      },
+      {
+        "instance_idx": 30,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.03551,
+        "latency_s": 7.191537000006065
+      },
+      {
+        "instance_idx": 34,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.040632,
+        "latency_s": 10.98823740001535
+      },
+      {
+        "instance_idx": 36,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.048296000000000006,
+        "latency_s": 13.006191899999976
+      },
+      {
+        "instance_idx": 32,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.056152,
+        "latency_s": 20.66724919999251
+      },
+      {
+        "instance_idx": 35,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.047636000000000005,
+        "latency_s": 16.096148000040557
+      },
+      {
+        "instance_idx": 31,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.059104,
+        "latency_s": 28.776871200010646
+      },
+      {
+        "instance_idx": 37,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6,
+        "cost_usd": 0.031172,
+        "latency_s": 7.443348600005265
+      },
+      {
+        "instance_idx": 33,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.064158,
+        "latency_s": 25.435936499969102
+      },
+      {
+        "instance_idx": 39,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.97,
+        "cost_usd": 0.030202,
+        "latency_s": 6.958729900012258
+      },
+      {
+        "instance_idx": 40,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.95,
+        "cost_usd": 0.033463999999999994,
+        "latency_s": 9.828471900022123
+      },
+      {
+        "instance_idx": 38,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.85,
+        "cost_usd": 0.044944,
+        "latency_s": 13.579945100005716
+      },
+      {
+        "instance_idx": 41,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.95,
+        "cost_usd": 0.033248,
+        "latency_s": 6.809939299942926
+      },
+      {
+        "instance_idx": 47,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.97,
+        "cost_usd": 0.030128000000000002,
+        "latency_s": 7.471205300011206
+      },
+      {
+        "instance_idx": 44,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.073654,
+        "latency_s": 23.371050800022203
+      },
+      {
+        "instance_idx": 43,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.62,
+        "cost_usd": 0.061376,
+        "latency_s": 24.355994699988514
+      },
+      {
+        "instance_idx": 42,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.067316,
+        "latency_s": 29.392194699961692
+      },
+      {
+        "instance_idx": 45,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.3,
+        "cost_usd": 0.054508,
+        "latency_s": 22.037169700022787
+      },
+      {
+        "instance_idx": 46,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.063832,
+        "latency_s": 28.973362900025677
+      },
+      {
+        "instance_idx": 48,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.85,
+        "cost_usd": 0.05888,
+        "latency_s": 24.609269300010055
+      },
+      {
+        "instance_idx": 51,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.97,
+        "cost_usd": 0.022506,
+        "latency_s": 9.036207099969033
+      },
+      {
+        "instance_idx": 49,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.033096,
+        "latency_s": 20.027676599973347
+      },
+      {
+        "instance_idx": 52,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.0,
+        "cost_usd": 0.0388,
+        "latency_s": 22.79529450001428
+      },
+      {
+        "instance_idx": 56,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.65,
+        "cost_usd": 0.05897000000000001,
+        "latency_s": 17.21816970000509
+      },
+      {
+        "instance_idx": 50,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.066458,
+        "latency_s": 36.03435920004267
+      },
+      {
+        "instance_idx": 57,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.72,
+        "cost_usd": 0.05982,
+        "latency_s": 14.464557500032242
+      },
+      {
+        "instance_idx": 53,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.9,
+        "cost_usd": 0.037454,
+        "latency_s": 21.25642119999975
+      },
+      {
+        "instance_idx": 60,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.94,
+        "cost_usd": 0.062898,
+        "latency_s": 11.026660600036848
+      },
+      {
+        "instance_idx": 59,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.053346000000000005,
+        "latency_s": 12.820472199993674
+      },
+      {
+        "instance_idx": 55,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.035786,
+        "latency_s": 22.11611040000571
+      },
+      {
+        "instance_idx": 54,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.062892,
+        "latency_s": 38.07667879998917
+      },
+      {
+        "instance_idx": 63,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.6,
+        "cost_usd": 0.074764,
+        "latency_s": 21.152262899966445
+      },
+      {
+        "instance_idx": 58,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.038914000000000004,
+        "latency_s": 20.301547300012317
+      },
+      {
+        "instance_idx": 64,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.08876999999999999,
+        "latency_s": 25.734184600005392
+      },
+      {
+        "instance_idx": 67,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.7,
+        "cost_usd": 0.042896000000000004,
+        "latency_s": 13.489872599951923
+      },
+      {
+        "instance_idx": 66,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.85,
+        "cost_usd": 0.053316,
+        "latency_s": 18.460449300007895
+      },
+      {
+        "instance_idx": 68,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.75,
+        "cost_usd": 0.09945599999999999,
+        "latency_s": 22.016596299945377
+      },
+      {
+        "instance_idx": 65,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.0,
+        "cost_usd": 0.042278,
+        "latency_s": 21.59312629996566
+      },
+      {
+        "instance_idx": 62,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "verify",
+        "correct": true,
+        "confidence": 0.9,
+        "cost_usd": 0.036868,
+        "latency_s": 21.214854699966963
+      },
+      {
+        "instance_idx": 61,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.03619,
+        "latency_s": 24.25709139998071
+      }
+    ],
+    "shapley_ablate_rescore": [
+      {
+        "instance_idx": 2,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9545454545454546,
+        "cost_usd": 0.055778,
+        "latency_s": 1.4626079000299796
+      },
+      {
+        "instance_idx": 1,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8461538461538461,
+        "cost_usd": 0.03479800000000001,
+        "latency_s": 1.2256346000358462
+      },
+      {
+        "instance_idx": 5,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.03358800000000001,
+        "latency_s": 0.9943685999605805
+      },
+      {
+        "instance_idx": 4,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.031687999999999994,
+        "latency_s": 0.6200549000059254
+      },
+      {
+        "instance_idx": 3,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.032243999999999995,
+        "latency_s": 1.3112291999859735
+      },
+      {
+        "instance_idx": 0,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8823529411764706,
+        "cost_usd": 0.072868,
+        "latency_s": 0.03576759999850765
+      },
+      {
+        "instance_idx": 7,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9655172413793104,
+        "cost_usd": 0.034396,
+        "latency_s": 0.05333139997674152
+      },
+      {
+        "instance_idx": 6,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.036324,
+        "latency_s": 0.7646165000041947
+      },
+      {
+        "instance_idx": 9,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.036308,
+        "latency_s": 0.2818252999568358
+      },
+      {
+        "instance_idx": 8,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.04080400000000001,
+        "latency_s": 1.2232777999597602
+      },
+      {
+        "instance_idx": 10,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.875,
+        "cost_usd": 0.07106200000000001,
+        "latency_s": 0.09454510000068694
+      },
+      {
+        "instance_idx": 11,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9230769230769231,
+        "cost_usd": 0.07038000000000001,
+        "latency_s": 0.17335430003004149
+      },
+      {
+        "instance_idx": 12,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.962962962962963,
+        "cost_usd": 0.054251999999999995,
+        "latency_s": 0.03542500000912696
+      },
+      {
+        "instance_idx": 13,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.11820800000000002,
+        "latency_s": 0.4141799999633804
+      },
+      {
+        "instance_idx": 15,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.057614000000000005,
+        "latency_s": 0.2884527000132948
+      },
+      {
+        "instance_idx": 17,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9787234042553191,
+        "cost_usd": 0.049504,
+        "latency_s": 0.062080100004095584
+      },
+      {
+        "instance_idx": 18,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.05855199999999999,
+        "latency_s": 0.041894600028172135
+      },
+      {
+        "instance_idx": 16,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9411764705882353,
+        "cost_usd": 0.042224000000000005,
+        "latency_s": 0.020821799989789724
+      },
+      {
+        "instance_idx": 14,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.11099600000000003,
+        "latency_s": 0.018704599991906434
+      },
+      {
+        "instance_idx": 19,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.051872,
+        "latency_s": 0.0253487000009045
+      },
+      {
+        "instance_idx": 22,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9090909090909091,
+        "cost_usd": 0.07668800000000002,
+        "latency_s": 0.5960648000473157
+      },
+      {
+        "instance_idx": 24,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9107142857142857,
+        "cost_usd": 0.056223999999999996,
+        "latency_s": 0.05572159995790571
+      },
+      {
+        "instance_idx": 23,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7777777777777778,
+        "cost_usd": 0.042187999999999996,
+        "latency_s": 0.1447457000031136
+      },
+      {
+        "instance_idx": 21,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9,
+        "cost_usd": 0.0727,
+        "latency_s": 0.021240799978841096
+      },
+      {
+        "instance_idx": 25,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.978494623655914,
+        "cost_usd": 0.060036,
+        "latency_s": 0.020169299968983978
+      },
+      {
+        "instance_idx": 20,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.75,
+        "cost_usd": 0.08886,
+        "latency_s": 0.1534004000131972
+      },
+      {
+        "instance_idx": 26,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8571428571428572,
+        "cost_usd": 0.06069599999999999,
+        "latency_s": 0.3309452999965288
+      },
+      {
+        "instance_idx": 28,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.7777777777777778,
+        "cost_usd": 0.051512,
+        "latency_s": 0.09042720001889393
+      },
+      {
+        "instance_idx": 27,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9523809523809523,
+        "cost_usd": 0.06969600000000001,
+        "latency_s": 0.37879579997388646
+      },
+      {
+        "instance_idx": 29,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8461538461538461,
+        "cost_usd": 0.06483200000000001,
+        "latency_s": 0.31971060001524165
+      },
+      {
+        "instance_idx": 30,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9636363636363636,
+        "cost_usd": 0.060952000000000006,
+        "latency_s": 0.039160899992566556
+      },
+      {
+        "instance_idx": 34,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.95,
+        "cost_usd": 0.058276,
+        "latency_s": 0.05302689998643473
+      },
+      {
+        "instance_idx": 36,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9333333333333333,
+        "cost_usd": 0.05879599999999999,
+        "latency_s": 0.031947200011927634
+      },
+      {
+        "instance_idx": 32,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.875,
+        "cost_usd": 0.044276,
+        "latency_s": 0.01827110000886023
+      },
+      {
+        "instance_idx": 35,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.96875,
+        "cost_usd": 0.052836,
+        "latency_s": 0.01782960002310574
+      },
+      {
+        "instance_idx": 31,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.875,
+        "cost_usd": 0.044276,
+        "latency_s": 0.14612679998390377
+      },
+      {
+        "instance_idx": 37,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.6666666666666667,
+        "cost_usd": 0.052876,
+        "latency_s": 0.08312119997572154
+      },
+      {
+        "instance_idx": 33,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.8571428571428572,
+        "cost_usd": 0.043876000000000005,
+        "latency_s": 0.44488889997592196
+      },
+      {
+        "instance_idx": 39,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.055668,
+        "latency_s": 0.06247619999339804
+      },
+      {
+        "instance_idx": 40,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.08606800000000002,
+        "latency_s": 0.43873619998339564
+      },
+      {
+        "instance_idx": 38,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.055668,
+        "latency_s": 0.050316200009547174
+      },
+      {
+        "instance_idx": 41,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.056772,
+        "latency_s": 0.027868499979376793
+      },
+      {
+        "instance_idx": 47,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.26999200000000007,
+        "latency_s": 0.07732300000498071
+      },
+      {
+        "instance_idx": 44,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9090909090909091,
+        "cost_usd": 0.03939999999999999,
+        "latency_s": 0.024357300018891692
+      },
+      {
+        "instance_idx": 43,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9090909090909091,
+        "cost_usd": 0.03848,
+        "latency_s": 0.02862599998479709
+      },
+      {
+        "instance_idx": 42,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9090909090909091,
+        "cost_usd": 0.03848,
+        "latency_s": 0.1550841999705881
+      },
+      {
+        "instance_idx": 45,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9090909090909091,
+        "cost_usd": 0.04672,
+        "latency_s": 0.029666899994481355
+      },
+      {
+        "instance_idx": 46,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.9444444444444444,
+        "cost_usd": 0.058320000000000004,
+        "latency_s": 0.025749400025233626
+      },
+      {
+        "instance_idx": 48,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.0,
+        "cost_usd": 0.259856,
+        "latency_s": 0.028334599977824837
+      },
+      {
+        "instance_idx": 51,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: LM response cannot be serialized to a JSON object.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: [[ ## reasoning ## ]]\nWe treat \n$$f(x,y,z)=2x^2+5y^2+2z^2+4xy-4yz-2z-2x$$ \nas a quadratic form in $x,y,z$ plus linear terms, find the unique critical point by setting partial derivatives to zero, verify \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 49,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.28052800000000006,
+        "latency_s": 33.49761339998804
+      },
+      {
+        "instance_idx": 52,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 56,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.4427000000000001,
+        "latency_s": 0.05886320001445711
+      },
+      {
+        "instance_idx": 50,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: Adapter JSONAdapter failed to parse the LM response. \n\nLM Response: **Verification of the solution:**\n\nWe want to maximize $ab^2c^3d^4$ given $a+b+c+d=10$, $a,b,c,d>0$.\n\n**Setting up AM-GM with 10 terms:**\nSplit the sum into 10 pieces:\n$$a + \\underbrace{\\frac{b}{2}+\\frac{b}{2}}_{2 \\text{ terms}} + \\underbrace{\\frac{c}{3}+\\frac{c}{3}+\\frac{c}{3}}_{3 \\text{ terms}} + \\underbrace{\\frac{d}{4}+\\frac{d}{4}+\\frac{d}{4}+\\frac{d}{4}}_{4 \\text{ terms}} = a+b+c+d = 10.$$\n\nBy AM-GM on these 10 positive terms:\n$$\\frac{a + 2\\cdot\\frac{b}{2} + 3\\cdot\\frac{c}{3} + 4\\cdot\\frac{d}{4}}{10} \\ge \\sqrt[10]{a \\cdot \\left(\\frac{b}{2}\\right)^2 \\cdot \\left(\\frac{c}{3}\\right)^3 \\cdot \\left(\\frac{d}{4}\\right)^4}.$$\n\nThe left-hand side equals $\\frac{10}{10} = 1$, so:\n$$1 \\ge \\sqrt[10]{\\frac{a b^2 c^3 d^4}{2^2 \\cdot 3^3 \\cdot 4^4}}.$$\n\nRaising both sides to the 10th power:\n$$a b^2 c^3 d^4 \\le 2^2 \\cdot 3^3 \\cdot 4^4.$$\n\n**Computing the bound:**\n$$2^2 = 4,\\quad 3^3 = 27,\\quad 4^4 = 256.$$\n$$4 \\times 27 =  \n\nExpected to find output fields in the LM response: [reasoning, verified_solution] \n\nActual output fields parsed from the LM response: [] \n\n"
+      },
+      {
+        "instance_idx": 57,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.0,
+        "cost_usd": 0.42826800000000015,
+        "latency_s": 0.03853189997607842
+      },
+      {
+        "instance_idx": 53,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: LM response cannot be serialized to a JSON object.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: **Reasoning:**\n\nWe need to minimize \n$$f(x,y,z) = 2x^2+5y^2+2z^2+4xy-4yz-2z-2x.$$\n\n**Step 1: Find critical points via partial derivatives.**\n\n$$f_x = 4x+4y-2=0 \\implies x+y=\\tfrac12$$\n$$f_y = 4x+10y-4z=0$$\n$$f_z = -4y+4z-2=0 \\implies z-y=\\tfrac12$$\n\nFrom the first equation: $x = \\tfrac12 - y$.  \nFrom the third: $z = y+\\tfrac12$.\n\n \n\nExpected to find output fields in the LM response: [reasoning, verified_solution] \n\n"
+      },
+      {
+        "instance_idx": 60,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 59,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, plan] \n\n"
+      },
+      {
+        "instance_idx": 55,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 54,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 63,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: LM response cannot be serialized to a JSON object.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: [[ ## reasoning ## ]]\nWe need a in [1,23] such that a\u00b7a \u2261 1 (mod 24), i.e., a^2 \u2261 1 (mod 24). This requires a to be invertible mod 24, i.e., gcd(a,24)=1. The integers coprime to 24 in [1,23] are exactly those not divisible by 2 or 3, and there are \u03c6(24)=8 of them: 1, 5, 7, 11, 13, 17, 19, 23.\n\nChecking each:\n- 1\u00b2 = 1 \u2261 1\n- 5\u00b2 = 25 \u2261 1\n- 7\u00b2 = 49 \u2261 1\n- 11\u00b2 = 121 = 120+1 \u2261 1\n- 13\u00b2 = 169 = 168+1 \u2261 1\n- 17\u00b2 = 289 = 288+1 \u2261 1\n- 19\u00b2 = 361 = 360+1 \u2261 1\n- 23\u00b2 = 529 = 528+1 \u2261 1\n\nAll 8 values satisfy a\u00b2 \u2261 1 (mod 24), so all 8 satisfy \n\nExpected to find output fields in the LM response: [reasoning, plan] \n\n"
+      },
+      {
+        "instance_idx": 58,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 64,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.4434319999999999,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, verified_solution] \n\n"
+      },
+      {
+        "instance_idx": 67,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: Adapter JSONAdapter failed to parse the LM response. \n\nLM Response: **Reasoning:**\n\nWe need four digits $d_1,d_2,d_3,d_4 \\in \\{1,\\dots,9\\}$ (allowing repeats) such that\n$$d_1 d_2 d_3 d_4 = 336 = 2^4 \\cdot 3 \\cdot 7.$$\n\n**Step 1: Locate the factor of 7.**\nSince $336$ has a single factor of 7, and among digits 1\u20139 only the digit $7$ contributes a factor of 7, exactly one of the four digits must equal $7$, and the remaining three digits must multiply to\n$$336/7 = 48.$$\n\n**Step 2: Find all triples of digits (1\u20139) with product 48.**\n\nWe search for unordered triples $(a,b,c)$ with $1\\le a,b,c\\le 9$ and $ab \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\nActual output fields parsed from the LM response: [] \n\n"
+      },
+      {
+        "instance_idx": 66,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: Adapter JSONAdapter failed to parse the LM response. \n\nLM Response: **Reasoning:**\n\nWe need four digits $d_1,d_2,d_3,d_4 \\in \\{1,\\dots,9\\}$ (allowing repeats) such that\n$$d_1 d_2 d_3 d_4 = 336 = 2^4 \\cdot 3 \\cdot 7.$$\n\n**Step 1: Locate the factor of 7.**\nSince $336$ has a single factor of 7, and among digits 1\u20139 only the digit $7$ contributes a factor of 7, exactly one of the four digits must equal $7$, and the remaining three digits must multiply to\n$$336/7 = 48.$$\n\n**Step 2: Find all triples of digits (1\u20139) with product 48.**\n\nWe search for unordered triples $(a,b,c)$ with $1\\le a,b,c\\le 9$ and $ab \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\nActual output fields parsed from the LM response: [] \n\n"
+      },
+      {
+        "instance_idx": 68,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, solution] \n\n"
+      },
+      {
+        "instance_idx": 65,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.043568,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, verified_solution] \n\n"
+      },
+      {
+        "instance_idx": 62,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "verify",
+        "correct": true,
+        "confidence": 1.0,
+        "cost_usd": 0.45502399999999993,
+        "latency_s": 40.050338300003204
+      },
+      {
+        "instance_idx": 61,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": null,
+        "correct": false,
+        "confidence": 0.0,
+        "cost_usd": 0.0,
+        "latency_s": 0.0,
+        "error": "AdapterParseError: Adapter JSONAdapter failed to parse the LM response. \n\nLM Response: **Reasoning:**\n\nWe want to minimize $s = x^2+y^2$ subject to $xy(x^2-y^2) = x^2+y^2$.\n\nUse polar coordinates: let $x = r\\cos\\theta$, $y = r\\sin\\theta$, so $x^2+y^2 = r^2 = s$.\n\nCompute the left side:\n$$\nxy(x^2-y^2) = r^2\\cos\\theta\\sin\\theta \\cdot r^2(\\cos^2\\theta-\\sin^2\\theta) = r^4 \\left(\\frac{1}{2}\\sin2\\theta\\right)(\\cos2\\theta) = \\frac{r^4}{4}\\sin4\\theta.\n$$\n\nSo the constraint becomes:\n$$\n\\frac{r^4}{4}\\sin4\\theta = r^2 \\quad\\Longrightarrow\\quad r^2 = \\frac{4}{\\sin4\\theta},\n$$\nvalid whenever $\\sin4\\theta \\neq 0$ (and we need $\\sin4\\theta > 0$ for $r^2>0$).\n\nSince $s = r^2 = \\dfrac{4}{\\sin4\\theta}$, and $\\sin4\\theta \\le 1$, we get\n$$\ns \\ge 4,\n$$\nwith equality when $\\sin4\\theta = 1$, e.g., $4\\theta = \\pi/2 \\Rightarrow \\theta = \\pi/8$.\n\nAt this $\\theta$, $r^2 = 4$, so $x^2+y^2=4$ is achievable (and nonzero real $x,y$ exist since $\\theta=\\pi/8$ gives nonzero $\\cos\\theta,\\sin\\theta$).\n\nThus the minimum value of $x^2+y^2$ is indeed $4$, confirming the given solution.\n\n**Verified Solution:**\n\n$\\boxed{4}$ \n\nExpected to find output fields in the LM response: [reasoning, verified_solution] \n\nActual output fields parsed from the LM response: [] \n\n"
+      }
+    ],
+    "uniform": [
+      {
+        "instance_idx": 2,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 1,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 5,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 4,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 3,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 0,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 7,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 6,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 9,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 8,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 10,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 11,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 12,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 13,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 15,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 17,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 18,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_answer",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 16,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 14,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 19,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 22,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 24,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 23,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 21,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 25,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 20,
+        "task": "hotpotqa",
+        "gold": "generate_query",
+        "predicted": "generate_query",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 26,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 28,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 27,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 29,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 30,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 34,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 36,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 32,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 35,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 31,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 37,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 33,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 39,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 40,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 38,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 41,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 47,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 44,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 43,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 42,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 45,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_answer",
+        "correct": true,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 46,
+        "task": "hotpotqa",
+        "gold": "generate_answer",
+        "predicted": "generate_query",
+        "correct": false,
+        "confidence": 0.5,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 48,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 51,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 49,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 52,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 56,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 50,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 57,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 53,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 60,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 59,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 55,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "solve",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 54,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 63,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 58,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 64,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 67,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 66,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "solve",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 68,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "verify",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 65,
+        "task": "aime",
+        "gold": "plan",
+        "predicted": "plan",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 62,
+        "task": "aime",
+        "gold": "verify",
+        "predicted": "verify",
+        "correct": true,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      },
+      {
+        "instance_idx": 61,
+        "task": "aime",
+        "gold": "solve",
+        "predicted": "plan",
+        "correct": false,
+        "confidence": 0.3333333333333333,
+        "cost_usd": 0.0,
+        "latency_s": 0.0
+      }
+    ]
+  },
+  "total_project_cost_usd_at_completion": 6.3686979999999895
+}

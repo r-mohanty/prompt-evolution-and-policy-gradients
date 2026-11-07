@@ -1,0 +1,4 @@
+{
+  "generate_query": "Given a multi-hop question, write a short search query that would\nretrieve a Wikipedia passage containing the next piece of evidence needed\nto answer it. Do not try to answer the question directly.",
+  "generate_answer": "Given a multi-hop question and retrieved context passages, answer the\nquestion. Answer with the shortest span of text that correctly answers\nthe question \u2014 no full sentences, no explanation."
+}

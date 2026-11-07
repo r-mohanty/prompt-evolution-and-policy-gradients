@@ -1,0 +1,780 @@
+{
+  "rca_vs_dr_grpo": {
+    "n_cells": 24,
+    "mean_diff": -0.0005540442919532134,
+    "se": 0.0022377939591890395,
+    "t": -0.24758503332183232,
+    "ci": [
+      -0.005184039993515336,
+      0.004075951409608909
+    ],
+    "n_better": 11,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.0234375
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 2,
+        "diff": 0.015625
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 0,
+        "diff": -0.01953125
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.015625
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 2,
+        "diff": -0.01171875
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 0,
+        "diff": -0.01953125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.005859375
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 2,
+        "diff": -0.001953125
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.0009765625
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.01708984375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.001953125
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.006036815615526936
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.009999141141205287
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 2,
+        "diff": 0.011585134211512887
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 0,
+        "diff": 0.011602023267611644
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.0030221453663308306
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 2,
+        "diff": -0.0030084509220788397
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 0,
+        "diff": 0.001437398301823295
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.002152247252593692
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 2,
+        "diff": -0.0026199028075550856
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.00045328619877413323
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": 0.0007415570961042672
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 1.3931156671143086e-05
+      }
+    ]
+  },
+  "rca_no_validate_vs_dr_grpo": {
+    "n_cells": 24,
+    "mean_diff": -0.003541735541014097,
+    "se": 0.001715588767689345,
+    "t": -2.0644431857550067,
+    "ci": [
+      -0.007091288701363352,
+      7.817619335157618e-06
+    ],
+    "n_better": 8,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.0
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 2,
+        "diff": -0.015625
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 0,
+        "diff": 0.01171875
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 2,
+        "diff": -0.01953125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 0,
+        "diff": -0.01171875
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 1,
+        "diff": 0.013671875
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 2,
+        "diff": -0.005859375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.00537109375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.0126953125
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": -0.005859375
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 0,
+        "diff": -0.007103604880943637
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 1,
+        "diff": -0.0024517895845901916
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 2,
+        "diff": -0.008375114784619553
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 0,
+        "diff": 0.009586173082877153
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 1,
+        "diff": 0.0001159462683685275
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 2,
+        "diff": 0.0018657186666752729
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 0,
+        "diff": -0.006387863734433147
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.008937636684404976
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 2,
+        "diff": -0.009550412339048325
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": 0.0006695170647746107
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": 0.0014540943481391178
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": -0.004617149157133182
+      }
+    ]
+  },
+  "gepa_then_grpo_vs_dr_grpo": {
+    "n_cells": 24,
+    "mean_diff": -0.028501114239332867,
+    "se": 0.030750260151365283,
+    "t": -0.9268576623104583,
+    "ci": [
+      -0.09212340249250764,
+      0.035121174013841905
+    ],
+    "n_better": 10,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 0,
+        "diff": -0.1328125
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 1,
+        "diff": -0.1171875
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 2,
+        "diff": -0.15625
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 0,
+        "diff": -0.1171875
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.140625
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 2,
+        "diff": -0.203125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 0,
+        "diff": -0.17578125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.14453125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 2,
+        "diff": -0.169921875
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.177734375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.18896484375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": -0.181640625
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.23097459239987556
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.08904277797352025
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 2,
+        "diff": 0.08721406971601245
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 0,
+        "diff": 0.11614098152190627
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 1,
+        "diff": 0.05134451865180162
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 2,
+        "diff": 0.07183436807197593
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 0,
+        "diff": 0.1837752280096161
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.03738906594711372
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 2,
+        "diff": 0.23617824941757487
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.08925541141229035
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": 0.16475303203159677
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.11712163657153543
+      }
+    ]
+  },
+  "rca_vs_rca_no_validate": {
+    "n_cells": 24,
+    "mean_diff": 0.0029876912490608837,
+    "se": 0.0025770245741976064,
+    "t": 1.1593569106694082,
+    "ci": [
+      -0.002344172594953964,
+      0.00831955509307573
+    ],
+    "n_better": 15,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.015625
+      },
+      {
+        "task": "aime",
+        "budget": 128,
+        "seed": 2,
+        "diff": 0.03125
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 0,
+        "diff": -0.03125
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 256,
+        "seed": 2,
+        "diff": 0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 0,
+        "diff": -0.0078125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 1,
+        "diff": -0.01953125
+      },
+      {
+        "task": "aime",
+        "budget": 512,
+        "seed": 2,
+        "diff": 0.00390625
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": 0.00439453125
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.00439453125
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.0078125
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 0,
+        "diff": 0.013140420496470573
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 1,
+        "diff": 0.012450930725795478
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 128,
+        "seed": 2,
+        "diff": 0.01996024899613244
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 0,
+        "diff": 0.002015850184734491
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 1,
+        "diff": -0.003138091634699358
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 256,
+        "seed": 2,
+        "diff": -0.0048741695887541125
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 0,
+        "diff": 0.007825262036256442
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 1,
+        "diff": 0.006785389431811284
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 512,
+        "seed": 2,
+        "diff": 0.00693050953149324
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.001122803263548744
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.0007125372520348505
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.0046310803138043255
+      }
+    ]
+  },
+  "gepa_onpolicy_then_grpo_vs_dr_grpo": {
+    "n_cells": 6,
+    "mean_diff": -0.05332376289603014,
+    "se": 0.06853066232613911,
+    "t": -0.7781007958490325,
+    "ci": [
+      -0.22951609573653378,
+      0.12286856994447351
+    ],
+    "n_better": 2,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.18603515625
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.18359375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": -0.15283203125
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.11972812827940238
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": 0.1646228142261341
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.15762367417708742
+      }
+    ]
+  },
+  "gepa_onpolicy_then_grpo_vs_gepa_then_grpo": {
+    "n_cells": 6,
+    "mean_diff": 0.005963001530496212,
+    "se": 0.010461613718589753,
+    "t": 0.5699886930350203,
+    "ci": [
+      -0.020933807339998046,
+      0.032859810400990466
+    ],
+    "n_better": 3,
+    "significant": false,
+    "cells": [
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.00830078125
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 1,
+        "diff": 0.00537109375
+      },
+      {
+        "task": "aime",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.02880859375
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 0,
+        "diff": -0.030472716867112035
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 1,
+        "diff": -0.00013021780546268458
+      },
+      {
+        "task": "hotpotqa",
+        "budget": 2048,
+        "seed": 2,
+        "diff": 0.04050203760555199
+      }
+    ]
+  },
+  "absolute": {
+    "aime_dr_grpo": {
+      "mean": 0.36990559895833336,
+      "n_runs": 15
+    },
+    "aime_gepa_onpolicy_then_grpo": {
+      "mean": 0.2099609375,
+      "n_runs": 3
+    },
+    "aime_gepa_then_grpo": {
+      "mean": 0.2113037109375,
+      "n_runs": 12
+    },
+    "aime_rca": {
+      "mean": 0.3664957682291667,
+      "n_runs": 12
+    },
+    "aime_rca_no_validate": {
+      "mean": 0.3658447265625,
+      "n_runs": 12
+    },
+    "hotpotqa_docstring_then_grpo": {
+      "mean": 0.30493233255550845,
+      "n_runs": 3
+    },
+    "hotpotqa_dr_grpo": {
+      "mean": 0.15262402881549356,
+      "n_runs": 15
+    },
+    "hotpotqa_gepa_onpolicy_then_grpo": {
+      "mean": 0.21117520511047314,
+      "n_runs": 3
+    },
+    "hotpotqa_gepa_then_grpo": {
+      "mean": 0.25567829435474804,
+      "n_runs": 12
+    },
+    "hotpotqa_rca": {
+      "mean": 0.15638037695784068,
+      "n_runs": 12
+    },
+    "hotpotqa_rca_no_validate": {
+      "mean": 0.1510560361263856,
+      "n_runs": 12
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "n_trajectories": 20,
+  "n_labelled": 20,
+  "n_scored": 20,
+  "gate": 0.9,
+  "human_label_distribution": {
+    "solve": 7,
+    "verify": 9,
+    "plan": 4
+  },
+  "majority_class_baseline": 0.45,
+  "judges": {
+    "haiku-4.5": {
+      "agreement": 0.3,
+      "n_agree": 6,
+      "n_scored": 20,
+      "n_judge_errors_excluded": 0,
+      "n_invalid_module_answers": 7,
+      "ci": [
+        0.14547527396899385,
+        0.5189767762289793
+      ],
+      "passes_gate": false,
+      "ci_lower_passes_gate": false,
+      "cohens_kappa": 0.08794788273615635,
+      "chance_agreement": 0.23249999999999998,
+      "beats_majority_baseline": false
+    },
+    "sonnet-5": {
+      "agreement": 0.9,
+      "n_agree": 18,
+      "n_scored": 20,
+      "n_judge_errors_excluded": 0,
+      "n_invalid_module_answers": 0,
+      "ci": [
+        0.6989617935882066,
+        0.9721341060158468
+      ],
+      "passes_gate": true,
+      "ci_lower_passes_gate": false,
+      "cohens_kappa": 0.8360655737704918,
+      "chance_agreement": 0.39,
+      "beats_majority_baseline": true
+    }
+  }
+}

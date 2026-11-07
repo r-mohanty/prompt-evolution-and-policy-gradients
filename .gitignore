@@ -1,0 +1,27 @@
+# environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# generated at run time (training outputs, queues, new API cost logs, raw archives)
+checkpoints/
+job_queues/
+logs/
+archives/
+sweep_logs/
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db

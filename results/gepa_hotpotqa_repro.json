@@ -1,0 +1,17 @@
+{
+  "task": "hotpotqa",
+  "optimizer": "GEPA",
+  "task_model": "anthropic/claude-haiku-4-5",
+  "reflection_model": "anthropic/claude-sonnet-5",
+  "n_train": 15,
+  "n_val": 20,
+  "n_test": 15,
+  "max_metric_calls": 150,
+  "baseline_em_f1": 0.2302,
+  "optimized_em_f1": 0.3933,
+  "gap": 0.1631,
+  "optimize_wall_seconds": 1.6697789000463672,
+  "optimize_cost_usd": 0.46638599999999986,
+  "total_cost_usd_at_completion": 0.5160209999999997,
+  "limitation_note": "Not a literal reconciliation against GEPA's own published HotpotQA numbers -- different task model (Haiku 4.5 vs the paper's) and different retrieval (local BM25 over the distractor pool vs the paper's full-Wikipedia ColBERT index, which is unreachable from this environment). Verifies the optimizer loop and improvement direction, not absolute score parity."
+}

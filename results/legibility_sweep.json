@@ -1,0 +1,4155 @@
+{
+  "judge_model": "anthropic/claude-sonnet-5",
+  "n_instances": 69,
+  "conditions": [
+    "baseline",
+    "strip_tool_logs",
+    "summarize_traces",
+    "distractor_module",
+    "latent_reasoning_proxy",
+    "latent_reasoning_proxy_gold"
+  ],
+  "total_cost_usd_at_completion": 7.525528000000003,
+  "rows": [
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 31.775383100146428
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.100473900092766
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 4.844226100016385
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 3.888302399776876
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 4.439926899969578
+    },
+    {
+      "instance_idx": 4,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 0.009046799968928099
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 30.58483409998007
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.699940800201148
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.54015630017966
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.196749199880287
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.970532099949196
+    },
+    {
+      "instance_idx": 5,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.658440300030634
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 33.41935970005579
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 3.7852567001245916
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.3,
+      "latency_s": 5.640946300001815
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.449168499791995
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.3,
+      "latency_s": 4.82000259985216
+    },
+    {
+      "instance_idx": 3,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.3,
+      "latency_s": 0.004202699987217784
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 0.012964499881491065
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.007880500052124262
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.0075523999985307455
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.007664299802854657
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 0.00754150003194809
+    },
+    {
+      "instance_idx": 6,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.8114124999847263
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 32.17638779990375
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 3.579858700046316
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.615724900038913
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 3.9247264000587165
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.806275100214407
+    },
+    {
+      "instance_idx": 1,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.344770400086418
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.9,
+      "latency_s": 32.43773750006221
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.384921099990606
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.827347100013867
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.9,
+      "latency_s": 5.061926499940455
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.95,
+      "latency_s": 4.221485299989581
+    },
+    {
+      "instance_idx": 2,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.87962400005199
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 33.215624999953434
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.850122099975124
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 6.218876299913973
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 6.344305099919438
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 7.042507600039244
+    },
+    {
+      "instance_idx": 0,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 6.406154599972069
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.304921200033277
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.284577399957925
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.005636499961838126
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.3727682000026107
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.4118510999251157
+    },
+    {
+      "instance_idx": 8,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.00977570004761219
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.995109200011939
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.3815348998177797
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.8579865000210702
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.291254099924117
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.9403492000419647
+    },
+    {
+      "instance_idx": 9,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.973733899882063
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.598841500002891
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.339495500084013
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.870791599852964
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.373729499988258
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.7060571000911295
+    },
+    {
+      "instance_idx": 11,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.34782430017367
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 4.684370999922976
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 16.592294699978083
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.163003500085324
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.309625100111589
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 3.340672600083053
+    },
+    {
+      "instance_idx": 7,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.6542612998746336
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 6.729855899931863
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 6.138747599907219
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 6.3084865000564605
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 6.473065099911764
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.508976999903098
+    },
+    {
+      "instance_idx": 10,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 4.1303409000393
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.366029999917373
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 8.202995399944484
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 4.598924099933356
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 4.948665500152856
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.957164699910209
+    },
+    {
+      "instance_idx": 13,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 6.829297800082713
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.446097099920735
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 3.871638200012967
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.911424200050533
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.1,
+      "latency_s": 4.702936599962413
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 16.69309250009246
+    },
+    {
+      "instance_idx": 12,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 3.982441500062123
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.0038882000371813774
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 4.763884000014514
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 4.193369599990547
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 5.729099000105634
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 7.367723400006071
+    },
+    {
+      "instance_idx": 14,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 5.959622199879959
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.9082244001328945
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.9188010999932885
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.748260200023651
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 6.047536700032651
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.6202519999351352
+    },
+    {
+      "instance_idx": 17,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 5.166425300063565
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.877346499823034
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.290641400031745
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 5.019895799923688
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.817975900135934
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.327536900062114
+    },
+    {
+      "instance_idx": 16,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 6.273253799881786
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 6.362848999910057
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 4.748153199907392
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 5.070560799911618
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 6.245396899990737
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.206234199926257
+    },
+    {
+      "instance_idx": 15,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.674437700072303
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 6.1534345000982285
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 7.313741400139406
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.043418599991128
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 5.37601749994792
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.917460799915716
+    },
+    {
+      "instance_idx": 18,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.0035819998010993004
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 7.637875500135124
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.62,
+      "latency_s": 6.373896699864417
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 9.60455930000171
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 6.935042499797419
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 6.049955999944359
+    },
+    {
+      "instance_idx": 19,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.0033185998909175396
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.328056399943307
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.84127110010013
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 6.754410099936649
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 5.221400800161064
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.2759732000995427
+    },
+    {
+      "instance_idx": 22,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.158994399942458
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.0320130998734385
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.844221099978313
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 4.46080410014838
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 6.491810099920258
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.069672799902037
+    },
+    {
+      "instance_idx": 23,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.258607700001448
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 4.444642000133172
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.457970999879763
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 17.34188189986162
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 13.995894300052896
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 9.99378229980357
+    },
+    {
+      "instance_idx": 20,
+      "task": "hotpotqa",
+      "gold": "generate_query",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 0.0032975999638438225
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 5.5425670999102294
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 6.07438959996216
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.994485400151461
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.523126999847591
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.836283399956301
+    },
+    {
+      "instance_idx": 25,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.346454200102016
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 4.2296670998912305
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.450975999934599
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 4.943119400180876
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.627013700082898
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.805090299807489
+    },
+    {
+      "instance_idx": 26,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.878425900125876
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 6.239936700090766
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 11.235886400099844
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 15.101472300011665
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.464221799978986
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.248637899989262
+    },
+    {
+      "instance_idx": 24,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 4.568621600046754
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.692530900007114
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 4.770221000071615
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.006329500116408
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.633339599939063
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.073257599957287
+    },
+    {
+      "instance_idx": 27,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.646031999960542
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 4.754574800143018
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 5.51935730013065
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 5.493100099964067
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 5.3046686998568475
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 5.467705300077796
+    },
+    {
+      "instance_idx": 28,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 4.294786100042984
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.087131200125441
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 4.470579999964684
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 9.165813399944454
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.15,
+      "latency_s": 23.886588100111112
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 7.345705199986696
+    },
+    {
+      "instance_idx": 21,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 36.80836959998123
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 3.8580205000471324
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 3.625116900075227
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.35,
+      "latency_s": 5.246439799899235
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.35,
+      "latency_s": 4.919093000004068
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.3,
+      "latency_s": 3.8525180998258293
+    },
+    {
+      "instance_idx": 31,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.108741499949247
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.699283500202
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.867536100093275
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 4.213310700142756
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.460071299923584
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 6.222832000115886
+    },
+    {
+      "instance_idx": 29,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 6.152910499833524
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 0.0034348000772297382
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.021183100063354
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.488852699985728
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.3,
+      "latency_s": 5.346990299876779
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.368682800093666
+    },
+    {
+      "instance_idx": 32,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 6.211933200014755
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.187447499949485
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.245692299911752
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.129064199980348
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 4.51836230000481
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 4.933332200162113
+    },
+    {
+      "instance_idx": 30,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 4.421779900090769
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.40940949996002
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.484784399857745
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 5.729968999978155
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.0115637998096645
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.4,
+      "latency_s": 5.032530799973756
+    },
+    {
+      "instance_idx": 33,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 5.928472499828786
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.204462100053206
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.2018499998375773
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 3.4881409001536667
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.262411100091413
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 4.88233120017685
+    },
+    {
+      "instance_idx": 37,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 3.5670260000042617
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 6.191505899885669
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 6.823549199849367
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 7.56486349995248
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 5.677920799935237
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 5.757864699931815
+    },
+    {
+      "instance_idx": 35,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 6.60163850011304
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.231051800074056
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.4123420000541955
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 5.7308158001396805
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.845754500012845
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 15.483582800021395
+    },
+    {
+      "instance_idx": 36,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.356063899816945
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 6.11032300000079
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.59667760017328
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 16.111664100084454
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 6.143697299994528
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 11.526946199825034
+    },
+    {
+      "instance_idx": 38,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 6.662826200015843
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 0.004624499939382076
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 0.0026283999904990196
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 7.358488900121301
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.7,
+      "latency_s": 18.175362500129268
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 14.799587599933147
+    },
+    {
+      "instance_idx": 39,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 0.004830199992284179
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 6.044515300076455
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 5.237868400057778
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 33.44930090010166
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 8.35261380020529
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 5.706775800092146
+    },
+    {
+      "instance_idx": 34,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 6.406223299913108
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 5.265269599854946
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.491834699874744
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 4.597893900005147
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 6.384017499862239
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.6828320999629796
+    },
+    {
+      "instance_idx": 42,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.990964799886569
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 0.0030926999170333147
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 0.0024679999332875013
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.4,
+      "latency_s": 4.915883100125939
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.4956877999939024
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.1915315999649465
+    },
+    {
+      "instance_idx": 43,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.068851799936965
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 6.320401499979198
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 4.871590900002047
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.4,
+      "latency_s": 0.0030304999090731144
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 6.877321599982679
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 4.504602500004694
+    },
+    {
+      "instance_idx": 44,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 0.003019200172275305
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 6.779108500108123
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 8.690002499846742
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 17.34554020012729
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 10.640526900067925
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 6.4525343999266624
+    },
+    {
+      "instance_idx": 40,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 12.251646700082347
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.462534500053152
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.3,
+      "latency_s": 5.592502299929038
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 7.445809199940413
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 4.366231400053948
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.708480699919164
+    },
+    {
+      "instance_idx": 45,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.746393899898976
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 5.920745800016448
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 5.195712799904868
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 10.221738699823618
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.82,
+      "latency_s": 14.576799100032076
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 17.524428400211036
+    },
+    {
+      "instance_idx": 41,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 4.844096099957824
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "baseline",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 4.825113900005817
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "strip_tool_logs",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.2,
+      "latency_s": 4.126428100047633
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "summarize_traces",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.35,
+      "latency_s": 4.99600929999724
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "distractor_module",
+      "predicted": "generate_query",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 5.11171259987168
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.851087199989706
+    },
+    {
+      "instance_idx": 46,
+      "task": "hotpotqa",
+      "gold": "generate_answer",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "generate_answer",
+      "correct": true,
+      "confidence": 0.55,
+      "latency_s": 5.1049660998396575
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 7.73439299990423
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.0031096001621335745
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 11.431344200158492
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 12.566602099919692
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 15.395237899851054
+    },
+    {
+      "instance_idx": 48,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.003165900008752942
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 15.399246899876744
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 0.004428499843925238
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 6.656487099826336
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 10.385389999952167
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 11.88507889979519
+    },
+    {
+      "instance_idx": 47,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 10.281217499868944
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.93,
+      "latency_s": 18.59688979992643
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.93,
+      "latency_s": 0.002626099856570363
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 4.966854600002989
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.95,
+      "latency_s": 10.091732899891213
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.93,
+      "latency_s": 8.081944199977443
+    },
+    {
+      "instance_idx": 51,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.92,
+      "latency_s": 27.71491659991443
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "plan",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 29.63197789993137
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "plan",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 0.004218199988827109
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "plan",
+      "correct": true,
+      "confidence": 0.68,
+      "latency_s": 20.813785299891606
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 20.029168100096285
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "plan",
+      "correct": true,
+      "confidence": 0.72,
+      "latency_s": 18.171508700121194
+    },
+    {
+      "instance_idx": 49,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "plan",
+      "correct": true,
+      "confidence": 0.72,
+      "latency_s": 0.00516510009765625
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 15.151066800113767
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.008579599903896451
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 19.98007609997876
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 17.68782419990748
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 17.84551369980909
+    },
+    {
+      "instance_idx": 53,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.005431900033727288
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 20.51694589992985
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 0.0037010000087320805
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 14.354103999910876
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 33.77234619995579
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.72,
+      "latency_s": 15.609157799975947
+    },
+    {
+      "instance_idx": 50,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 24.181129000149667
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 24.76976989977993
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 0.0048316000029444695
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 30.544608699856326
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 24.04474740009755
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 36.72289570001885
+    },
+    {
+      "instance_idx": 52,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.0034223999828100204
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 12.160652399994433
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 0.004206100013107061
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 6.952926200116053
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 16.851647099945694
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.62,
+      "latency_s": 6.617438499815762
+    },
+    {
+      "instance_idx": 56,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 9.769770100014284
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 14.895458900136873
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 0.003416100051254034
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 5.588229199871421
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 12.577218999853358
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 14.0117665999569
+    },
+    {
+      "instance_idx": 57,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 0.0033185998909175396
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 20.082080100197345
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 0.004707700107246637
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 15.521706799976528
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 20.606193900108337
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 27.336085699964315
+    },
+    {
+      "instance_idx": 55,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 17.835788700031117
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 8.048848700011149
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 0.0028979999478906393
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 5.882398799993098
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 11.09222749993205
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 30.54744859994389
+    },
+    {
+      "instance_idx": 59,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 0.00489219999872148
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 23.003231900045648
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 0.0032111001200973988
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 33.15777269983664
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 64.98533890000544
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 21.692710699979216
+    },
+    {
+      "instance_idx": 54,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 18.462247700197622
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 16.91399100003764
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 0.002876400016248226
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 7.299977699993178
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 9.05374739994295
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 6.419322700006887
+    },
+    {
+      "instance_idx": 63,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 0.005178299965336919
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 33.364509199978784
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.85,
+      "latency_s": 0.003830500179901719
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 19.98051970009692
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.75,
+      "latency_s": 12.150686400011182
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.82,
+      "latency_s": 30.04420579993166
+    },
+    {
+      "instance_idx": 58,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 20.1378676998429
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.72,
+      "latency_s": 10.536474199965596
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.72,
+      "latency_s": 0.004822699818760157
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.6,
+      "latency_s": 12.838852300075814
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 10.50392260006629
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 11.998004300054163
+    },
+    {
+      "instance_idx": 64,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.62,
+      "latency_s": 19.034477799898013
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 32.74921100004576
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 0.004459899850189686
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.55,
+      "latency_s": 24.188240200048313
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.82,
+      "latency_s": 65.89400510000996
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 7.394167700083926
+    },
+    {
+      "instance_idx": 61,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "plan",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 37.36406029993668
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 34.10148429987021
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.6,
+      "latency_s": 0.009193799924105406
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 17.56585959997028
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 16.964440099895
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 23.41093060001731
+    },
+    {
+      "instance_idx": 66,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.82,
+      "latency_s": 16.87689740001224
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.032786700176075
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.004499600036069751
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 21.741243100026622
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 13.79573419992812
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 19.35874819988385
+    },
+    {
+      "instance_idx": 67,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 9.957114099990577
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 16.265536999795586
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 0.0036503998562693596
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.78,
+      "latency_s": 78.29775819997303
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.85,
+      "latency_s": 11.71084599988535
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.9,
+      "latency_s": 16.78970680013299
+    },
+    {
+      "instance_idx": 60,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.72,
+      "latency_s": 103.81697040004656
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "baseline",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 9.202311600092798
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "strip_tool_logs",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 0.003392999991774559
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": true,
+      "confidence": 0.72,
+      "latency_s": 21.559751199791208
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "distractor_module",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 12.14219729998149
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 9.491417499957606
+    },
+    {
+      "instance_idx": 68,
+      "task": "aime",
+      "gold": "solve",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 9.897380899870768
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "baseline",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 30.58150659990497
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "strip_tool_logs",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.8,
+      "latency_s": 0.0037372999358922243
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.7,
+      "latency_s": 64.00950579997152
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "distractor_module",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 102.62540810019709
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 68.03938549989834
+    },
+    {
+      "instance_idx": 65,
+      "task": "aime",
+      "gold": "plan",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.75,
+      "latency_s": 0.017120399978011847
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "baseline",
+      "predicted": null,
+      "correct": false,
+      "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n",
+      "latency_s": 121.53701369999908
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "strip_tool_logs",
+      "predicted": null,
+      "correct": false,
+      "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n",
+      "latency_s": 0.01409030007198453
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "summarize_traces",
+      "predicted": "solve",
+      "correct": false,
+      "confidence": 0.65,
+      "latency_s": 33.24769619992003
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "distractor_module",
+      "predicted": null,
+      "correct": false,
+      "error": "AdapterParseError: The LM returned an empty or null response.\n\nAdapter JSONAdapter failed to parse the LM response. \n\nLM Response: {'text': None} \n\nExpected to find output fields in the LM response: [reasoning, failing_module, confidence] \n\n",
+      "latency_s": 128.885407499969
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy",
+      "predicted": "verify",
+      "correct": true,
+      "confidence": 0.82,
+      "latency_s": 66.77329090004787
+    },
+    {
+      "instance_idx": 62,
+      "task": "aime",
+      "gold": "verify",
+      "condition": "latent_reasoning_proxy_gold",
+      "predicted": "verify",
+      "correct": true,
+      "confidence": 0.65,
+      "latency_s": 37.72100179991685
+    }
+  ]
+}
